@@ -1,0 +1,608 @@
+﻿<!DOCTYPE HTML>
+<html>
+ <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/list.css">
+	<link rel="stylesheet" type="text/css" href="./css/article.css">
+	<link rel="stylesheet" type="text/css" href="./css/usercenter.css">
+	<link rel="stylesheet" type="text/css" href="./css/shoppingcart.css">
+	<!-- <script type="text/javascript" src="./js/usercenter.js"></script> -->
+	<title>优果网</title>
+ </head>
+ <body>
+	 <div class="dqwz">
+	  <p>您当前的位置： 会员中心
+	  </p>
+	 </div>
+	 <div class="userdh">
+		 <p>您好：<span>username</span></p>
+		 <div class="userdhk userdhk1" id="jsuserL0" onclick="jsuserR0()">会员首页</div>
+		 <div class="userdhk userdhk1">退出</div>
+		 <img src="./img/user/msgtip.gif">
+		 <p>提醒：</p>
+		 <a href=""><div class="userdhk userdhk2">代付款订单<span>[0]</span></div></a>
+		 <a href=""><div class="userdhk userdhk2">到货通知<span>[0]</span></div></a>
+		 <a href=""><div class="userdhk userdhk2">新消息<span>[0]</span></div></a>
+	 
+	 </div>
+	 
+	 <!--左侧栏目-->
+	 <div class="usercenterl">
+		  <h3>交易管理</h3>
+		  <p id="jsuserL1" onclick="jsuserR1()">我的订单</p>
+		  <p id="jsuserL2" onclick="jsuserR2()">积分历史</p>
+		  <p id="jsuserL3" onclick="jsuserR3()">积分兑换代金券</p>
+		  <p id="jsuserL4" onclick="jsuserR4()">我的代金券</p>
+		  <p id="jsuserL5" onclick="jsuserR5()">我的预存款</p>
+		  <p id="jsuserL6" onclick="jsuserR6()">预存款充值</p>
+		  <p id="jsuserL7" onclick="jsuserR7()">我的优果卡</p>
+		  <h3>收藏夹</h3>
+		  <p id="jsuserL8" onclick="jsuserR8()">商品收藏</p>
+		  <p id="jsuserL9" onclick="jsuserR9()">到货通知</p>
+		  <h3>咨询</h3>
+		  <p id="jsuserL10" onclick="jsuserR10()">评论与咨询</p>
+		  <h3>购买</h3>
+		  <p id="jsuserL11" onclick="jsuserR11()">最近购买的商品</p>
+		  <h3>个人信息</h3>
+		  <p id="jsuserL12" onclick="jsuserR12()">个人信息</p>
+		  <p id="jsuserL13" onclick="jsuserR13()">修改密码</p>
+		  <p id="jsuserL14" onclick="jsuserR14()">收货地址</p>
+		  
+	 </div>
+	 <!--会员首页-->
+	 <div id="jsartright0">
+	 <div class="usercenterr usercenterr1">
+		 <h3>您好，<span>username</span>，欢迎进入会员中心</h3>
+		 <div class="userwell">
+		   <p>您目前是：<span>[新会员]</span></p>
+		   <p>经验值是：<span>0</span>（经验值累积到1可成为V1）</p>
+		   <p>目前账户总积分：<span>0</span>分<a href="">查看积分历史>></a></p>
+		   <p>预存款余额：<span>￥0.00</span><a href="">去充值>></a></p>
+		 </div>
+		 <div class="userwelr">
+			<h4>促销活动</h4>
+			<p></p>
+			<p></p>
+		 </div>
+	 </div>
+	 <div class="usercenterr usercenterr2 usercenterr3">
+		<h3>最近订单<a href="">所有订单>></a></h3>
+		<!-- <p>暂无订单</p> -->
+	 </div>
+    	<ul class="usercenterul">
+	      <li class="usercenterli">商品名称</li>
+	      <li class="usercenterli">订单号</li>
+	      <li class="usercenterli">下单日期</li>
+	      <li class="usercenterli">总金额</li>
+	      <li class="usercenterli">订单状态</li>
+	      <li class="usercenterli">操作</li>
+	   </ul>
+   	   <ul class="usercenterulcon">
+	      <li><a href="">【特惠】美国新奇士柠檬 10个 </a></li>
+	      <li>20141230239967</li>
+	      <li>2014-12-30 23:32</li>
+	      <li><span>￥38.00</span></li>
+	      <li>已作废</li>
+	      <li><a href=""><button>查看订单</button></a></li>
+	   </ul>
+	   
+	 
+	 <div class="usercenterr usercenterr3">
+		<h3>最近收藏<a href="">所有收藏>></a></h3>
+		<p>暂无收藏</p>
+	 </div>
+	  </div>
+	      <!--我的订单-->
+	<div id="jsartright1">	  
+	  <div class="usermyorder">
+	   <div class="usermyorderh">
+	     <h3 id="jsorderk1" onclick="orderjs1()">所有订单</h3>
+	     <h3 id="jsorderk2" onclick="orderjs2()">撒娇订单</h3>
+		 <script type="text/javascript">
+		   function orderjs1(){
+		     var myorder1=document.getElementById("jsorderk1");
+			 myorder1.style.cssText="background:#36A803;color:white";
+		     var myorder2=document.getElementById("jsorderk2");
+			 myorder2.style.cssText="display:inline;float:left;padding:8px 4px;color:black";
+		   }
+		   function orderjs2(){
+		     var myorder1=document.getElementById("jsorderk1");
+			 myorder1.style.cssText="display:inline;float:left;padding:8px 4px;color:black;background:#F7F7F9";
+		     var myorder2=document.getElementById("jsorderk2");
+			 myorder2.style.cssText="background:#36A803;color:white";
+		   }
+		 </script>
+	   </div>
+	  </div>  
+	   <ul class="usercenterul">
+	      <li class="usercenterli">商品名称</li>
+	      <li class="usercenterli">订单号</li>
+	      <li class="usercenterli">下单日期</li>
+	      <li class="usercenterli">总金额</li>
+	      <li class="usercenterli">订单状态</li>
+	      <li class="usercenterli">操作</li>
+	   </ul>
+	   <ul class="usercenterulcon">
+	      <li><a href="">【特惠】美国新奇士柠檬 10个 </a></li>
+	      <li>20141230239967</li>
+	      <li>2014-12-30 23:32</li>
+	      <li><span>￥38.00</span></li>
+	      <li>已作废</li>
+	      <li><a href=""><button>查看订单</button></a></li>
+	   </ul>
+	  </div> 
+	      <!--积分历史-->
+	<div id="jsartright2">	  
+	<div class="userscorehistory">
+	    <h3>我的积分</h3>
+		<p>您当前的有效积分：<span>0</span>分
+		   <a href="">兑换代金券>></a>&nbsp<a href="">兑换赠品>></a></p>
+	    <ul class="usercenterul">
+		  <li class="usercenterli">日期</li>
+		  <li class="usercenterli">积分变化</li>
+		  <li class="usercenterli">说明</li>
+		</ul>
+		 <div class="">
+		   尚无积分历史
+		</div> 
+		<div id="scorelaw">
+		  <h5>积分规则：</h5>
+		  <p>1. 当积分已达到某一兑换积分标准时，顾客可将累计积分依照网站相应积分及兑换标准兑换回馈商品，网站将即时从用户会员积分中扣减相应积分。</p>
+		  <p>2. 各项回馈项目（包含各项商品、服务或抵用券等）及兑换标准及兑换规则均以兑换当时最新回馈活动公告或目录为准。</p>
+		  <p>3. 部分兑换商品有数量限制的，兑完为止。</p>
+		  <p>4. 公告或目录如有有效期限的，逾期即不得兑换。</p>
+		  <p>5. 积分兑换区的商品为只可用积分兑换的商品（如积分价格：100积分）。</p>
+		
+		</div>
+	 </div> 
+	 </div> 
+	      <!--积分兑换代金券-->
+     <div id="jsartright3">		  
+	 <div class="">
+	 积分兑换代金券
+	 </div>
+	 </div>
+	      <!--我的代金券-->
+    <div id="jsartright4">			  
+	 <div class="">
+	   我的代金券
+	 </div>
+	 </div>
+	      <!--我的预存款-->
+	<div id="jsartright5">		  
+	 <div class="">
+	  我的预存款
+	 
+	 </div>
+	 </div>
+	       <!--预存款充值-->
+	<div  id="jsartright6">
+	 <div class="usercashstore">
+	      <h3>充值到预存款</h3>
+		  <p>您当前的预存款余额为<span>￥0.00</span></p>
+	      <div class="storecash">
+		    <div class="onlinestorecash">
+			 <form action=""method="post" id="cashstore">
+			 <h3>在线充值</h3>
+			 <p>输入充值金额</p>
+			 <input type="text" name="" form="cashstore">
+			 
+			 <h4>选择支付方式</h4>
+			 <input type="radio" name="storestyle" form="cashstore"value="1"checked>乐支付<br/>
+			 <input type="radio" name="storestyle" form="cashstore"value="2">支付宝支付<br/>
+			 <input type="radio" name="storestyle" form="cashstore"value="3">银联在线支付<br/>
+			 <input class="gostore" type="submit" name="" form="cashstore" value="去充值"> 
+			</div>
+		    <div class="ygstorecash">
+			  <h3>优果卡充值</h3>
+			  <form action=""method="post" id="cardstore">
+			  卡号：<input type="text" form="cardstore"><br/>
+			  密码：<input type="password" form="cardstore"><br/>
+			  <input class="gostore" type="submit" name="" form="cardstore" value="去充值"> 
+			</div>
+			
+		  </div> 
+	  </div>
+	  </div>
+	        <!--我的优果卡-->
+	<div id="jsartright7">			
+	 <div class="">
+	  我的优果卡
+	 </div>
+	 </div>
+	         <!--商品收藏-->
+	 <div id="jsartright8">
+	 <div class="usercenterr usercenterr3">
+		<h3>最近收藏<a href="">所有收藏>></a></h3>
+		<p>暂无收藏</p>
+	 </div>
+	 </div>
+	        <!--到货通知-->
+	 <div id="jsartright9">
+	 <div class="">
+	 <h2>到货通知</h2>
+	 <ul class="usercenterul">
+	      <li class="usercenterli">商品名称</li>
+	      <li class="usercenterli">订单号</li>
+	      <li class="usercenterli">下单日期</li>
+	      <li class="usercenterli">总金额</li>
+	      <li class="usercenterli">订单状态</li>
+	      <li class="usercenterli">操作</li>
+	   </ul>
+	 </div>
+	 </div>
+
+	         <!--评论与咨询-->
+	 <div id="jsartright10">
+	 <div class="">
+	 评论与咨询
+	 </div>
+	 </div>
+	         <!--最近购买的商品-->
+	 <div id="jsartright11">
+	 <div class="">
+	 最近购买商品
+	 </div>
+	 </div>
+	        <!--个人信息-->
+	  <div id="jsartright12">
+	 <div class="goodaddress">
+	  <h2>个人信息<p>| 请尽量完整填写您的个人信息，方便店家与您联系。</p></h2>
+	     <div class="lastuser">
+		 
+		    <form action="" method="" >
+	 
+	        <p>&nbsp&nbsp&nbsp&nbsp货币：<input type="text" name="" value="人民币"></p>
+			<p>&nbsp&nbspE-mail：<input type="text" name=""></p>
+			
+		  
+		 </div>
+		 <input type="submit" name="" value="保存"id="addressplus">
+		  </form>
+	 </div>
+	 </div>
+	         <!--修改密码-->
+	 <div id="jsartright13">
+	 <div class="goodaddress">
+	  <h2>修改密码</h2>
+	     <div class="lastuser">
+		 
+		    <form action="" method="" >
+	 
+	        <p>&nbsp&nbsp当前密码：<input type="text" name=""></p>
+			<p>&nbsp&nbsp&nbsp&nbsp新密码：<input type="password" name=""></p>
+			<p>&nbsp&nbsp确认密码：<input type="password" name=""></p>
+		  
+		 </div>
+		 <input type="submit" name="" value="保存"id="addressplus">
+		  </form>
+	 </div>
+	 </div>
+	         <!--收货地址-->
+	  <div id="jsartright14">
+	  <div class="goodaddress">
+	     <h2>收货地址&nbsp<p><span>+&nbsp</span>添加新的收货地址</p></h2>
+	     <div class="lastuser">
+		  <form action="" method="" >
+		    <p>收货人：<input type="text" name=""></p>
+            <p>&nbsp&nbsp地区：<select name="">
+                     <option value="" checked>请选择</option>
+                     <option value="1" onclick="jsselect1()">江苏</option>
+                     <option value="2" onclick="jsselect2()">浙江</option>
+                     <option value="3" onclick="jsselect3()">安徽</option>
+                     <option value="4" onclick="jsselect4()">上海</option>
+				   </select>
+				   <select id="jszone1">
+				      <option value="">请选择1</option><!--此处js 未起作用  用法不对-->
+				   </select>
+				   <select id="jszone2">
+				      <option value="">请选择2</option>
+				   </select>
+				   <select id="jszone3">
+				      <option value="">请选择3</option>
+				   </select>
+				   <select id="jszone4">
+				      <option value="">请选择4</option>
+				   </select>
+				   <script type="text/javascript">
+				      function jsselect1(){
+					    document.getElementById("jszone1").style.display="block"
+					    document.getElementById("jszone2").style.display="none"
+					    document.getElementById("jszone3").style.display="none"
+					    document.getElementById("jszone4").style.display="none"
+					  }
+				      function jsselect2(){
+					    document.getElementById("jszone2").style.display="block"
+					    document.getElementById("jszone1").style.display="none"
+					    document.getElementById("jszone3").style.display="none"
+					    document.getElementById("jszone4").style.display="none"
+					  }
+				      function jsselect3(){
+					    document.getElementById("jszone3").style.display="block"
+					    document.getElementById("jszone2").style.display="none"
+					    document.getElementById("jszone1").style.display="none"
+					    document.getElementById("jszone4").style.display="none"
+					  }
+				      function jsselect4(){
+					    document.getElementById("jszone4").style.display="block"
+					    document.getElementById("jszone2").style.display="none"
+					    document.getElementById("jszone3").style.display="none"
+					    document.getElementById("jszone1").style.display="none"
+					  }
+				   
+				   </script>
+				   
+				   </p>
+			<p>&nbsp&nbsp地址：<textarea cols="20"rows="3"></textarea></p>
+			<p>&nbsp&nbsp邮编：<input type="text" name=""></p>
+			<p>&nbsp&nbsp电话：<input type="text" name=""></p>
+		   </form>
+		 </div>
+		 <input type="submit" name="" value="保存"id="addressplus">
+		 <input type="reset" name="" value="取消添加"id="addresssup">
+		 </form>
+	 </div>
+	 </div>
+	<script type="text/javascript">
+	   
+	    function jsuserR0(){
+		   document.getElementById("jsartright0").style.display="block";
+		   document.getElementById("jsartright1").style.display="none";
+		   document.getElementById("jsartright2").style.display="none";
+		   document.getElementById("jsartright3").style.display="none";
+		   document.getElementById("jsartright4").style.display="none";
+		   document.getElementById("jsartright5").style.display="none";
+		   document.getElementById("jsartright6").style.display="none";
+		   document.getElementById("jsartright7").style.display="none";
+		   document.getElementById("jsartright8").style.display="none";
+		   document.getElementById("jsartright9").style.display="none";
+		   document.getElementById("jsartright10").style.display="none";
+		   document.getElementById("jsartright11").style.display="none";
+		   document.getElementById("jsartright12").style.display="none";
+		   document.getElementById("jsartright13").style.display="none";
+		   document.getElementById("jsartright14").style.display="none";
+		  }
+	    function jsuserR1(){
+		   document.getElementById("jsartright0").style.display="none";
+		   document.getElementById("jsartright1").style.display="block";
+		   document.getElementById("jsartright2").style.display="none";
+		   document.getElementById("jsartright3").style.display="none";
+		   document.getElementById("jsartright4").style.display="none";
+		   document.getElementById("jsartright5").style.display="none";
+		   document.getElementById("jsartright6").style.display="none";
+		   document.getElementById("jsartright7").style.display="none";
+		   document.getElementById("jsartright8").style.display="none";
+		   document.getElementById("jsartright9").style.display="none";
+		   document.getElementById("jsartright10").style.display="none";
+		   document.getElementById("jsartright11").style.display="none";
+		   document.getElementById("jsartright12").style.display="none";
+		   document.getElementById("jsartright13").style.display="none";
+		   document.getElementById("jsartright14").style.display="none";
+		  }
+	    function jsuserR2(){
+		   document.getElementById("jsartright0").style.display="none";
+		   document.getElementById("jsartright1").style.display="none";
+		   document.getElementById("jsartright2").style.display="block";
+		   document.getElementById("jsartright3").style.display="none";
+		   document.getElementById("jsartright4").style.display="none";
+		   document.getElementById("jsartright5").style.display="none";
+		   document.getElementById("jsartright6").style.display="none";
+		   document.getElementById("jsartright7").style.display="none";
+		   document.getElementById("jsartright8").style.display="none";
+		   document.getElementById("jsartright9").style.display="none";
+		   document.getElementById("jsartright10").style.display="none";
+		   document.getElementById("jsartright11").style.display="none";
+		   document.getElementById("jsartright12").style.display="none";
+		   document.getElementById("jsartright13").style.display="none";
+		   document.getElementById("jsartright14").style.display="none";
+		  }
+	    function jsuserR3(){
+		   document.getElementById("jsartright0").style.display="none";
+		   document.getElementById("jsartright1").style.display="none";
+		   document.getElementById("jsartright2").style.display="none";
+		   document.getElementById("jsartright3").style.display="block";
+		   document.getElementById("jsartright4").style.display="none";
+		   document.getElementById("jsartright5").style.display="none";
+		   document.getElementById("jsartright6").style.display="none";
+		   document.getElementById("jsartright7").style.display="none";
+		   document.getElementById("jsartright8").style.display="none";
+		   document.getElementById("jsartright9").style.display="none";
+		   document.getElementById("jsartright10").style.display="none";
+		   document.getElementById("jsartright11").style.display="none";
+		   document.getElementById("jsartright12").style.display="none";
+		   document.getElementById("jsartright13").style.display="none";
+		   document.getElementById("jsartright14").style.display="none";
+		  }
+	    function jsuserR4(){
+		   document.getElementById("jsartright0").style.display="none";
+		   document.getElementById("jsartright1").style.display="none";
+		   document.getElementById("jsartright2").style.display="none";
+		   document.getElementById("jsartright3").style.display="none";
+		   document.getElementById("jsartright4").style.display="block";
+		   document.getElementById("jsartright5").style.display="none";
+		   document.getElementById("jsartright6").style.display="none";
+		   document.getElementById("jsartright7").style.display="none";
+		   document.getElementById("jsartright8").style.display="none";
+		   document.getElementById("jsartright9").style.display="none";
+		   document.getElementById("jsartright10").style.display="none";
+		   document.getElementById("jsartright11").style.display="none";
+		   document.getElementById("jsartright12").style.display="none";
+		   document.getElementById("jsartright13").style.display="none";
+		   document.getElementById("jsartright14").style.display="none";
+		  }
+	    function jsuserR5(){
+		   document.getElementById("jsartright0").style.display="none";
+		   document.getElementById("jsartright1").style.display="none";
+		   document.getElementById("jsartright2").style.display="none";
+		   document.getElementById("jsartright3").style.display="none";
+		   document.getElementById("jsartright4").style.display="none";
+		   document.getElementById("jsartright5").style.display="block";
+		   document.getElementById("jsartright6").style.display="none";
+		   document.getElementById("jsartright7").style.display="none";
+		   document.getElementById("jsartright8").style.display="none";
+		   document.getElementById("jsartright9").style.display="none";
+		   document.getElementById("jsartright10").style.display="none";
+		   document.getElementById("jsartright11").style.display="none";
+		   document.getElementById("jsartright12").style.display="none";
+		   document.getElementById("jsartright13").style.display="none";
+		   document.getElementById("jsartright14").style.display="none";
+		  }
+	    function jsuserR6(){
+		   document.getElementById("jsartright0").style.display="none";
+		   document.getElementById("jsartright1").style.display="none";
+		   document.getElementById("jsartright2").style.display="none";
+		   document.getElementById("jsartright3").style.display="none";
+		   document.getElementById("jsartright4").style.display="none";
+		   document.getElementById("jsartright5").style.display="none";
+		   document.getElementById("jsartright6").style.display="block";
+		   document.getElementById("jsartright7").style.display="none";
+		   document.getElementById("jsartright8").style.display="none";
+		   document.getElementById("jsartright9").style.display="none";
+		   document.getElementById("jsartright10").style.display="none";
+		   document.getElementById("jsartright11").style.display="none";
+		   document.getElementById("jsartright12").style.display="none";
+		   document.getElementById("jsartright13").style.display="none";
+		   document.getElementById("jsartright14").style.display="none";
+		  }
+	    function jsuserR7(){
+		   document.getElementById("jsartright0").style.display="none";
+		   document.getElementById("jsartright1").style.display="none";
+		   document.getElementById("jsartright2").style.display="none";
+		   document.getElementById("jsartright3").style.display="none";
+		   document.getElementById("jsartright4").style.display="none";
+		   document.getElementById("jsartright5").style.display="none";
+		   document.getElementById("jsartright6").style.display="none";
+		   document.getElementById("jsartright7").style.display="block";
+		   document.getElementById("jsartright8").style.display="none";
+		   document.getElementById("jsartright9").style.display="none";
+		   document.getElementById("jsartright10").style.display="none";
+		   document.getElementById("jsartright11").style.display="none";
+		   document.getElementById("jsartright12").style.display="none";
+		   document.getElementById("jsartright13").style.display="none";
+		   document.getElementById("jsartright14").style.display="none";
+		  }
+	    function jsuserR8(){
+		   document.getElementById("jsartright0").style.display="none";
+		   document.getElementById("jsartright1").style.display="none";
+		   document.getElementById("jsartright2").style.display="none";
+		   document.getElementById("jsartright3").style.display="none";
+		   document.getElementById("jsartright4").style.display="none";
+		   document.getElementById("jsartright5").style.display="none";
+		   document.getElementById("jsartright6").style.display="none";
+		   document.getElementById("jsartright7").style.display="none";
+		   document.getElementById("jsartright8").style.display="block";
+		   document.getElementById("jsartright9").style.display="none";
+		   document.getElementById("jsartright10").style.display="none";
+		   document.getElementById("jsartright11").style.display="none";
+		   document.getElementById("jsartright12").style.display="none";
+		   document.getElementById("jsartright13").style.display="none";
+		   document.getElementById("jsartright14").style.display="none";
+		  }
+	    function jsuserR9(){
+		   document.getElementById("jsartright0").style.display="none";
+		   document.getElementById("jsartright1").style.display="none";
+		   document.getElementById("jsartright2").style.display="none";
+		   document.getElementById("jsartright3").style.display="none";
+		   document.getElementById("jsartright4").style.display="none";
+		   document.getElementById("jsartright5").style.display="none";
+		   document.getElementById("jsartright6").style.display="none";
+		   document.getElementById("jsartright7").style.display="none";
+		   document.getElementById("jsartright8").style.display="none";
+		   document.getElementById("jsartright9").style.display="block";
+		   document.getElementById("jsartright10").style.display="none";
+		   document.getElementById("jsartright11").style.display="none";
+		   document.getElementById("jsartright12").style.display="none";
+		   document.getElementById("jsartright13").style.display="none";
+		   document.getElementById("jsartright14").style.display="none";
+		  }
+	    function jsuserR10(){
+		   document.getElementById("jsartright0").style.display="none";
+		   document.getElementById("jsartright1").style.display="none";
+		   document.getElementById("jsartright2").style.display="none";
+		   document.getElementById("jsartright3").style.display="none";
+		   document.getElementById("jsartright4").style.display="none";
+		   document.getElementById("jsartright5").style.display="none";
+		   document.getElementById("jsartright6").style.display="none";
+		   document.getElementById("jsartright7").style.display="none";
+		   document.getElementById("jsartright8").style.display="none";
+		   document.getElementById("jsartright9").style.display="none";
+		   document.getElementById("jsartright10").style.display="block";
+		   document.getElementById("jsartright11").style.display="none";
+		   document.getElementById("jsartright12").style.display="none";
+		   document.getElementById("jsartright13").style.display="none";
+		   document.getElementById("jsartright14").style.display="none";
+		  }
+	    function jsuserR11(){
+		   document.getElementById("jsartright0").style.display="none";
+		   document.getElementById("jsartright1").style.display="none";
+		   document.getElementById("jsartright2").style.display="none";
+		   document.getElementById("jsartright3").style.display="none";
+		   document.getElementById("jsartright4").style.display="none";
+		   document.getElementById("jsartright5").style.display="none";
+		   document.getElementById("jsartright6").style.display="none";
+		   document.getElementById("jsartright7").style.display="none";
+		   document.getElementById("jsartright8").style.display="none";
+		   document.getElementById("jsartright9").style.display="none";
+		   document.getElementById("jsartright10").style.display="none";
+		   document.getElementById("jsartright11").style.display="block";
+		   document.getElementById("jsartright12").style.display="none";
+		   document.getElementById("jsartright13").style.display="none";
+		   document.getElementById("jsartright14").style.display="none";
+		  }
+	    function jsuserR12(){
+		   document.getElementById("jsartright0").style.display="none";
+		   document.getElementById("jsartright1").style.display="none";
+		   document.getElementById("jsartright2").style.display="none";
+		   document.getElementById("jsartright3").style.display="none";
+		   document.getElementById("jsartright4").style.display="none";
+		   document.getElementById("jsartright5").style.display="none";
+		   document.getElementById("jsartright6").style.display="none";
+		   document.getElementById("jsartright7").style.display="none";
+		   document.getElementById("jsartright8").style.display="none";
+		   document.getElementById("jsartright9").style.display="none";
+		   document.getElementById("jsartright10").style.display="none";
+		   document.getElementById("jsartright11").style.display="none";
+		   document.getElementById("jsartright12").style.display="block";
+		   document.getElementById("jsartright13").style.display="none";
+		   document.getElementById("jsartright14").style.display="none";
+		  }
+	    function jsuserR13(){
+		   document.getElementById("jsartright0").style.display="none";
+		   document.getElementById("jsartright1").style.display="none";
+		   document.getElementById("jsartright2").style.display="none";
+		   document.getElementById("jsartright3").style.display="none";
+		   document.getElementById("jsartright4").style.display="none";
+		   document.getElementById("jsartright5").style.display="none";
+		   document.getElementById("jsartright6").style.display="none";
+		   document.getElementById("jsartright7").style.display="none";
+		   document.getElementById("jsartright8").style.display="none";
+		   document.getElementById("jsartright9").style.display="none";
+		   document.getElementById("jsartright10").style.display="none";
+		   document.getElementById("jsartright11").style.display="none";
+		   document.getElementById("jsartright12").style.display="none";
+		   document.getElementById("jsartright13").style.display="block";
+		   document.getElementById("jsartright14").style.display="none";
+		  }
+	    function jsuserR14(){
+		   document.getElementById("jsartright0").style.display="none";
+		   document.getElementById("jsartright1").style.display="none";
+		   document.getElementById("jsartright2").style.display="none";
+		   document.getElementById("jsartright3").style.display="none";
+		   document.getElementById("jsartright4").style.display="none";
+		   document.getElementById("jsartright5").style.display="none";
+		   document.getElementById("jsartright6").style.display="none";
+		   document.getElementById("jsartright7").style.display="none";
+		   document.getElementById("jsartright8").style.display="none";
+		   document.getElementById("jsartright9").style.display="none";
+		   document.getElementById("jsartright10").style.display="none";
+		   document.getElementById("jsartright11").style.display="none";
+		   document.getElementById("jsartright12").style.display="none";
+		   document.getElementById("jsartright13").style.display="none";
+		   document.getElementById("jsartright14").style.display="block";
+		  }
+	 
+	 </script>
+ </body>
+</html>

@@ -1,0 +1,195 @@
+﻿/*当前位置*/
+.dqwz{width:1100px;
+      height:35px;
+	  float:left;}
+.dqwz p{font-size:12px;
+       line-height:30px;}
+.dqwz a:visited{color:black;}	   
+.dqwz a:hover{color:#FF9900;}
+/*热销排行及浏览记录*/	   
+.list{width:1100px;
+      float:left;}
+.paihang{width:230px;
+         float:left;}
+.paihang h3{height:36px;
+          width:215px;
+           background:#E6E6E6;
+		   float:left;
+		   font-size:12px;
+		   line-height:36px;
+		   padding-left:15px;}
+.paihang ul{background:white;
+           float:left;
+		   width:230px;
+		   margin-bottom:8px;}
+.paihang li{width:230px;
+           height:85px;
+		   float:left;
+		   border-bottom:1px dashed gray;}	
+.paihang li img{width:66px;
+             height:66px;
+			 float:left;
+			 margin:11px;}
+.paihang li h4{line-height:15px;
+            margin:10px 0 25px 5px;
+			font-weight:normal;}
+.paihang a:visited{color:black;}			
+.paihang a:hover{color:#FF9900;}			
+.paihang li p{color:green;}	
+/*列表分类*/
+.listcl{width:858px;
+        float:left;
+		background:white;
+		margin-left:10px;
+		border:1px solid gray;}
+.classname{width:838px;
+           margin:8px 9px 0 9px;
+		   border:1px solid gray;
+		   float:left;}
+.classkind{width:838px;
+            border:1px solid gray;
+           margin:8px 9px 10px 9px;
+		   float:left;}
+.listcl ul{width:808px;
+          margin:10px;
+		  float:left;
+		  padding:0  5px;
+		  border-bottom:1px dotted #9A9A9A;}
+.listcl h3{display:inline;
+          width:95px;
+		  float:left;
+		  margin-right:10px;
+		  font-size:12px;
+		  text-align:right;}
+.listcl li{height:20px;
+         display:inline;
+		 float:left;color:#3366CC;
+		 padding:2px 7px;
+		 margin:0 2px 2px 2px;
+		 font-size:12px;}
+.listcl li:hover{background:#41A53A;
+			  color:white;
+			  font-weight:bold;}		 
+/* .listcl li a{color:#3366CC;}		 
+.listcl li a:hover{color:white;} */	
+/*搜索结果*/
+.searchtt{width:858px;
+          height:25px;
+		  float:left;
+		  margin:5px 0 0 10px;
+		  border:1px solid gray;}
+.searchtt p{color:#333333;line-height:25px;margin-left:10px;}		  
+.searchtt p span{color:red;}		  
+/*列表排序方式选择*/ 
+.listsort{width:858px;
+          height:50px;
+		  float:left;
+		  border:1px solid gray;
+		  border-top:2px solid #41A53A;
+		  margin:5px 0 0 10px;}
+.sortkind{
+          height:22px;
+		  padding:3px 10px 0 10px;
+		  float:left;
+		  text-align:center;
+		  color:#333333;
+		  border:1px solid gray;
+		  display:inline;
+		  margin:11px 0 12px 10px;}	
+.sortkind a:visited{color:black;}		  
+.sortkind a:hover{color:white;}   
+.sortkind:hover{background:#D93133;color:white;}		  
+.sortkind1:hover{background:#D93133;color:white;font-weight:bold;}	
+/*分页结构上部*/
+.pagingup{width:180px;
+          float:right;
+		  height:22px;
+		  margin:13px 0;}
+.pagingup p{display:inline;float:left;}		  
+.sortkind2{height:20px;
+		  padding:0 5px;
+		  float:left;
+		  margin:0 5px 0 0 ;
+		  text-align:center;
+		  border:1px solid gray;
+		  color:black;}
+#pageingupfirst{border:1px solid #FF6600;/*选中部分样式 下部通用*/
+		  color:#FF6600;
+		  background:#FFEDE1;}		  
+.sortkind2:hover{border:1px solid #ff9900;
+		  color:#FF9900;}		  
+
+
+
+  
+.listsort>p{display:inline;
+		  margin:14px 0 9px 20px;
+		  float:left;}	
+.listsort select{border:1px solid gray;}	  
+/*列表详情*/
+.listlb{width:870px;
+         float:left;
+		 background:white;
+		 margin-top:8px;}		 
+.listlbxq {width:207px;
+          height:330px;
+         margin:0 0 15px 10px ;
+         float:left;
+		 background:white;
+		 position:relative;
+		 left:0;
+		 top:0;}		 
+.listlbxq img{width:207px;
+           height:207px;
+		   float:left; }
+.listlbxq p{font-size:12px;float:left;line-height:15px;}/*同前面相同*/
+
+.listlbxqp1 a:visited{color:black;line-height:15px;}		   
+.listlbxqp1 a:hover{color:#FF9900;}		   
+.listlbxqp1{margin:3px 0 0 5px;}		   
+.listlbxqp2{color:red;margin:3px 0 0 5px;}		   
+.listlbxqp3{color:green;position:absolute;
+		 bottom:40px;
+		 left:5px;
+		 margin:5px 0 0 5px;}		   
+.listlbxqp3 span{color:green;font-weight:bold;margin-right:30px;}		   
+.listlbxqp4{color:gray;display:inline;float:right;position:absolute;
+		 bottom:36px;
+		 right:10px;
+		 margin:5px 0 5px 5px;}		   
+.listlbxqp4 span{color:gray;text-decoration:line-through;}	
+.trolley{background:#44993F;
+         height:20px;
+         padding:5px 5px 0px 5px;
+		 /* margin:5px 5px 10px 60px; */
+		 color:white;
+		 position:absolute;
+		 bottom:10px;
+		 right:65px;}
+.trolley p{color:white;text-shadow:1px 1px #B15F15;}		 
+.collect{background:#EDEDED;
+         height:18px;
+		 padding:5px 8px 0 8px;
+		 border:1px solid #BBBBBB;
+		 /* margin:5px 5px 10px 0px; */
+		 position:absolute;
+		 bottom:10px;
+		 right:10px;}
+.collect p{color:#444444;}		 
+.collect p:hover{color:black;}		 
+/*分页结构*/ 
+.paging{width:250px;
+         height:20px;
+		 margin:10px 0;
+		 padding-left:690px;
+		 float:right;}
+.pagingmo{display:inline;
+         float:left;
+		 height:20px;
+		 margin:0 2px;
+		 border:1px solid gray;
+		 padding:0 5px;
+		 color:gray;}
+.pagingmo:hover{border:1px solid #FF9900;
+                color:#FF9900;}	
+.pageingsub{background:white;}				

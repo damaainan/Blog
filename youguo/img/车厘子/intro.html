@@ -1,0 +1,894 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="description" content="bShare是中国最专业、最强大的社会化分享服务商,提供能分享到QQ空间、新浪微博、人人网等的分享功能.分享是社会化媒体优化（SMO）的核心,bShare能够助您由病毒式的传播一传十、十传百地将内容扩散到整个社会化媒体.也提供专业的用户分享数据统计,并致力于打造最专业的社会化分享服务." />
+    <meta name="keywords" content="" />
+	<meta name="author" content="Buzzinate" />
+
+    <title>分享工具,收藏按钮|什么是bShare-bShare介绍</title>
+
+    <!-- Be aware: This will be replaced in build script -->
+    <link rel="stylesheet" href="http://static.bshare.cn/css/bshare2.css?t=20141015.css" type="text/css" />
+    <style type="text/css">
+    	.top-menu-popup .bLink { color: #333; }
+    </style>
+    
+    <link rel="icon" href="http://www.bshare.cn/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="http://www.bshare.cn/favicon.ico" type="image/x-icon" />
+	
+    <script type="text/javascript" charset="utf-8">
+		var BSHARE_WEBSITE_HOST = "http://www.bshare.cn/";
+		var BSHARE_BUTTON_HOST = "http://b.bshare.cn/";
+		var BSHARE_STATIC_HOST = "http://static.bshare.cn/"; // used by bshare-web-common.js?v=20141015 and unitpngfix.js
+		var bookmarkletOff = false;
+	</script>
+	<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/js/libs/jquery-1.7.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/js/libs/jquery.tools.ui.min.1.2.6.js"></script>
+	<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/js/libs/jquery.bgiframe.min.js"></script>
+	<!-- Be aware: This will be replaced in build script -->
+	<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/js/bshare-web-common.js?v=20141015"></script>
+	<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/js/ajaxLogout.js"></script>
+	<!--[if lt IE 7]>
+    <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/js/libs/unitpngfix.js"></script>
+    <![endif]-->
+    
+    <style type="text/css">
+    	.identifyImg { width: 14px; margin-bottom: -3px; }
+    </style>
+</head>
+
+<body style="background:#f5f5f5;">
+	<div class="container-center">
+		<noscript>
+			<span style="color:red;"><strong>此页面使用Javascript。请在您的浏览器中启用Javascript，以浏览全页面。谢谢！</strong></span>
+			<div class="spacer10"></div>
+		</noscript>
+	</div>
+    
+    
+    
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+#topMenu { border-bottom: 1px solid #e5e5e5; background: #f5f5f5; box-shadow: 1px 1px 3px #efefef; font-size: 12px; line-height: 30px; }
+</style>
+
+<div id="topMenu">
+    <div class="container-center" style="overflow:hidden;">
+        <div class="topSubSite left">
+            <a title="微积分" class="bLinkDark" href="http://points.bshare.cn" target="_blank">微积分</a> |
+            <a title="乐知推荐插件" class="bLinkDark" href="http://www.lezhi.me" target="_blank">乐知推荐插件</a>
+        </div>
+        
+        <div id="mainTopNavDiv" style="background:#f5f5f5;overflow:hidden;padding:0 15px;color:#000;font-size:12px;text-align:right;line-height:28px;height:28px;">
+            
+            
+                <div class="right">
+                    <table class="topMain">
+                        <tr>
+                            <td><a title="立即注册" class="bLink" href="/register" 
+                                style="color:red;">立即注册</a></td>
+                            <td>|</td>
+                            <td><a title="帮助" class="bLink" href="/help" 
+                                style="color:#000;">帮助</a></td>
+                            <td>|</td>
+                            <td><a title="登录" class="bLink" href="/login" 
+                                style="color:#000;font-size:14px;font-weight:bold;">登录</a></td>
+                        </tr>
+                    </table>
+                </div>
+            
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="clear"></div>
+
+<!-- AUTHORITIES POPUP -->
+
+<!-- AUTHORITIES-POPUP-END -->
+
+<!-- SCRIPTS-START -->
+<script type="text/javascript" charset="utf-8">
+    function oauthLoginSuccess(type) {
+        window.location.href = "loginAction";
+    }
+    
+    $(function() {
+        $("#bshare_logout").live("click", function(e) {
+            passport_ajax_logout("http://one.bshare.cn");
+            window.location.href='/logout';
+            return false;
+        });
+        
+        
+    });
+</script>
+
+	
+    <div class="clear"></div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+.top-menu-popup .bLink { color: #333; }
+</style>
+
+<div style="background:#fff;min-width:980px;">
+    <div class="spacer30"></div>
+    <div class="container-center">
+        <div class="left" style="width:200px;">
+            <a title="bShare.cn" href="http://www.bshare.cn">
+                
+                
+                
+                    <img alt="bShare.cn" src="http://static.bshare.cn/images/bshare-logo-main.gif"/>
+                
+            </a>
+            <div class="clear"></div>
+        </div>
+        
+		<div class="right" style="padding-top:10px;">
+		    <div class="right" style="margin-left:5px;">
+		        <a class="top-button-single" href="http://www.bshare.cn/blog" target="_blank">博客</a>
+		    </div>
+		    <div class="right" style="margin-left:5px;">
+		        <div class="top-button" onclick="document.location='/help';">
+		            <div>帮助</div>
+		            <div class="arrow-down"></div>
+		        </div>
+		        <div class="top-menu-popup">
+		            <div><a title="注册" class="bLink" href="/help/register">注册</a></div>
+		            <div><a title="安装bShare" class="bLink" href="/help/installImage">安装bShare</a></div>
+		            <div><a title="分享按钮自定义" class="bLink" href="/help/apiJsParams">分享按钮自定义</a></div>
+		            <div><a title="bShare API" class="bLink" href="/help/apiClientJsPage">bShare API</a></div>
+		            <div><a title="分享平台代码参考" class="bLink" href="/help/platformNames">分享平台代码参考</a></div>
+		            <div><a title="分享优化功能设置" class="bLink" href="/help/shareSettings">分享优化功能设置</a></div>
+		            <div><a title="常见问题" class="bLink" href="/help/general">常见问题</a></div>
+		
+		            <div><a title="使用建议" class="bLink" 
+		                href="/bestPractices">使用建议</a></div>
+		            <div><a title="范例" class="bLink" 
+		                href="/integrations">范例</a></div>
+		            <!-- Partner Links -->
+		            <div><a title="站长资讯" class="bLink" href="http://www.admin5.com/browse/177/index.shtml" target="_blank">站长资讯
+		                <img src="http://static.bshare.cn/images/icon_new_window.gif" style="margin:0 0 3px 3px;">
+		            </a></div>
+		        </div>
+		    </div>
+		    <div class="right" style="margin-left:5px;">
+		        <a class="top-button-single" 
+		            href="/analytics">数据统计</a>
+		        
+		        
+		    </div>
+		    <div class="right" style="margin-left:5px;">
+		        <div class="top-button" onclick="document.location='/products';">
+		            <div>bShare产品</div>
+		            <div class="arrow-down"></div>
+		        </div>
+		        <div class="top-menu-popup">
+		            <div><a title="bShare" class="bLink" href="/products/bshare">bShare</a></div>
+		            <div><a title="bShare高级" class="bLink" href="/products/premiumServices">bShare高级</a></div>
+		            <div><a title="bShare电商" class="bLink" href="http://ec.bshare.cn" target="_blank">bShare电商</a></div>
+		            <div><a title="微积分" class="bLink" href="http://points.bshare.cn" target="_blank">微积分</a></div>
+		            <div><a title="乐知推荐插件" class="bLink" href="http://lz.bshare.cn" target="_blank">乐知推荐插件</a></div>
+		            <div><a title="bShare图片分享" class="bLink" href="/products/imageShare">bShare图片分享</a></div>
+		            <div><a title="bShare划词分享" class="bLink" href="/products/bshareDrag">bShare划词分享</a></div>
+		            <div><a title="bShare视频分享" class="bLink" href="/products/videoShare">bShare视频分享</a></div>
+		            <div><a title="bShare书签" class="bLink" href="/products/bookmark">bShare书签</a></div>
+		            <div><a title="bShare一键通" class="bLink" href="/products/bsync">bShare一键通</a></div>
+		            <div><a title="bShare Mobile SDK" class="bLink" href="/products/bshareMobileSDK">bShare Mobile SDK</a></div>
+		            <div><a title="bURL" class="bLink" href="/products/burl">bURL</a></div>
+		            <!-- <div><a title="bShare热文推荐" class="bLink" href="/products/bshareRecomm">bShare热文推荐</a></div> -->
+		            <!-- <div><a title="乐知" class="bLink" href="/products/lezhi">乐知</a></div>  -->
+		            <!-- 
+		            <div><a title="bShare Pro" class="bLink" href="/bsharePro">bShare Pro</a></div>
+		            <div><a title="bShare企业版" class="bLink" href="/bshareEnterprise">bShare企业版</a></div>
+		            -->
+		        </div>
+		    </div>
+		    <div class="right" style="margin-left:5px;">
+		        <div class="top-button" onclick="document.location='/intro';">
+		            <div>bShare介绍</div>
+		            <div class="arrow-down"></div>
+		        </div>
+		        <div class="top-menu-popup">
+		            <div><a title="什么是bShare?" class="bLink" href="/intro">什么是bShare?</a></div>
+		            <div><a title="bShare特色" class="bLink" href="/intro/reasons">bShare特色</a></div>
+		            <div><a title="支持的平台" class="bLink" href="/intro/services">支持的平台</a></div>
+		            <!-- <div><a title="谁在使用bShare?" class="bLink" href="/intro/bshareSites">谁在使用bShare?</a></div> -->
+		            <div><a title="合作伙伴" class="bLink" href="/partners">合作伙伴</a></div>
+		            <div><a title="展览厅" class="bLink" href="/gallery">展览厅</a></div>
+		            <div class="hidden"><a title="实验室" class="bLink" href="/labs">实验室</a></div>
+		            <!-- 
+		            <div><a title="自定义按钮" class="bLink" href="/introCustomize">自定义按钮</a></div>
+		            -->
+		        </div>
+		    </div>
+		    <div class="right">
+		        <div class="top-button" onclick="document.location='/help/install';">
+		            <div>bShare安装</div>
+		            <div class="arrow-down"></div>
+		        </div>
+		        <div class="top-menu-popup">
+		            <div><a title="一般网站" class="bLink" href="/help/install">一般网站</a></div>
+		            <div><a title="BBS" class="bLink" href="/help/installBbs">BBS</a></div>
+		            <div><a title="CMS" class="bLink" href="/help/installCms">CMS</a></div>
+		            <div><a title="电子商务" class="bLink" href="/help/installEc">电子商务</a></div>
+		            <div><a title="淘宝" class="bLink" href="/help/installTaobao">淘宝</a></div>
+		            <div class="hidden"><a title="电子商务" class="bLink" href="/help/installEcomm">电子商务</a></div>
+		            <div><a title="博客" class="bLink" href="/help/installBlog">博客</a></div>
+		            <div><a title="邮件模板" class="bLink" href="/help/installEmail">邮件模板</a></div>
+		            <div><a title="乐知推荐插件" class="bLink" href="http://www.lezhi.me/get?uuid=nologin" target="_blank">乐知推荐插件</a></div>
+		        </div>
+		    </div>
+		    <div class="clear"></div>
+		</div>
+		<div id="top-bookmarklet" style="position:absolute;top:65px;display:none;"><a href="javascript:var%20d=document;var%20b=d.body;if(b&&!document.xmlVersion){if(!d.getElementById('bsBox')){void(y=document.createElement('script'));void(y.src='http://static.bshare.cn/b/bookmark.js#lang=zh');void(b.appendChild(y));}else{bShare.show();}}" 
+		    style="text-indent:-9999px;width:80px;height:120px;display:block;background:url(http://static.bshare.cn/images/top-bookmarklet.png) no-repeat;">bShare书签</a></div>
+        
+		<!-- SCRIPTS -->
+		<script type="text/javascript" charset="utf-8">
+		    $(function() {
+		        if (!$.browser.msie && !bookmarkletOff) {
+		            $(window).resize(function() {
+		                var ww = $(window).width();
+		                if (ww < 1180) {
+		                    $("#top-bookmarklet").hide();
+		                } else {
+		                    $("#top-bookmarklet").show();
+		                    $("#top-bookmarklet").css("right", (ww-980)/2 - 100);
+		                }
+		            }).resize();
+		        }
+		    });
+		</script>
+        
+        <div class="clear spacer20"></div>
+    </div>
+</div>
+
+	<div class="clear"></div>
+
+	
+        
+			<div class="container-stripe">
+				<div class="container-stripe-image">
+					<div id="breadCrumbs" class="left floatFix"></div>
+					
+					
+						<div id="topRightShareButton" style="padding:15px 0;" class="right">
+							<!-- <a class="bshareDiv" href="http://www.bshare.cn/share">分享按钮</a> -->
+							<div class="bshare-custom"><a style="margin-right:8px;color:#666;text-decoration:none;">分享到</a><a title="分享到一键通" class="bshare-bsharesync"></a><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div>
+							<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=f8a4a53f-438a-4ffa-939f-7f313a7e2b05&amp;pophcol=2&amp;lang=zh"></script>
+							<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+							<script type="text/javascript" charset="utf-8">
+								
+								
+									bShare.addEntry({
+								        title:"bShare分享快乐",
+								        summary:"中国最强大的社会化分享分享工具，邀请您来体验！",
+										vUid:'' , vEmail:'', vTag:'BSHARE'});
+								
+							</script>
+						</div>
+					
+				</div>
+				<div class="clear"></div>
+			</div>
+        
+            
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- STATUS MESSAGES START -->
+<div id="status-messages-pdiv" style="visibility:hidden;height:26px;margin:0px auto 5px;width:850px;z-index:100;position:relative;" align="center">
+    <div id="status-messages" class="status-messages bMessages"></div>
+    <div id="status-messages-div" style="display:none;" class="bMessages">
+	    
+	    
+	</div>
+	<div id="field-error-messages-div" style="display:none;" class="bMessages">
+	    
+	</div>
+	<div class="clear"></div>
+</div>
+<!-- STATUS MESSAGES END -->
+        
+        <div class="clear"></div>
+        
+        
+			<div class="container-center" style="margin-top:-30px;">
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="bShare是中国最专业、最强大的社会化分享服务商,提供能分享到QQ空间、新浪微博、人人网等的分享功能.分享是社会化媒体优化（SMO）的核心,bShare能够助您由病毒式的传播一传十、十传百地将内容扩散到整个社会化媒体.也提供专业的用户分享数据统计,并致力于打造最专业的社会化分享服务." />
+<meta name="keywords" content="" />
+
+<div>
+	<div class="spacer20"></div>
+	<img style="margin:0 0 0 60px;position:absolute;" src="http://static.bshare.cn/images/whatisbshare-top.png"/>
+	<div class="clear"></div>
+	<img class="right" style="margin:35px 70px 0 0;" alt="中国最专业的社会化分享服务" src="http://static.bshare.cn/images/whatisbshare-top-right.png"/>
+	<div class="clear"></div>
+	<div class="module-white-grey div-shadow-5" style="margin:10px 0 30px;padding:30px 0;">
+		<div class="spacer20"></div>
+		
+		<div style="padding:0 40px;">
+			<div class="left" style="width:49%;text-align:center;">
+				<div class="spacer50"></div>
+				<a title="立即免费获取bShare" style="display:block;margin:30px 55px;width:275px;height:76px;background:url(http://static.bshare.cn/images/get-bshare-button-blue.png) no-repeat;" href="/help/install"></a>
+				<div class="clear"></div>
+			</div>
+			<div class="right" style="width:49%;">
+				<img alt="什么是bShare?" src="http://static.bshare.cn/images/whatisbshare.png"/>
+				<div class="spacer20"></div>
+				<p style="color:#666;text-align:justify;line-height:220%;">
+					bShare是中国最专业、最强大的社会化分享服务商，提供能分享到QQ空间、新浪微博、人人网等的分享功能。目前bShare已与<a href="/intro/services" class="bLinkU" target="_blank">130+家合作平台</a>，赢得
+					<!-- <a href="/intro/bshareSites" class="bLinkU" target="_blank">150000+家网站</a> -->150000+家网站
+					的信任。
+				</p>
+				<p style="color:#666;text-align:justify;line-height:220%;">
+					长期以来，我们专注于在社会化分享领域深耕细作，为千万家网站注入社交功能，导入巨大流量的同时，也提供专业的用户分享<a href="/analytics" class="bLinkU" target="_blank">数据统计</a>，并致力于打造最专业的社会化分享服务。
+				</p>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="clear spacer20"></div>
+		
+		<div class="div-gradient-light-top" style="height:40px;"></div>
+
+		<div style="padding:0 40px;">
+			<div class="left" style="width:49%;">
+				<div class="heading4" style="color:#08d;">除了SEO，还有SMO</div>
+				<div class="spacer20"></div>
+				<p style="color:#666;text-align:justify;line-height:200%;font-size:12px;">
+					Search Engine Optimization(SEO)——搜索引擎优化在国内风靡一时，成为站长提升网站流量的利器之一。而随着社会化媒体的蓬勃发展，社会化流量正在逐渐超越SEO流量，成为网站流量的主要来源。如何在网络社会化的这个洪流中，进行<a href="/smo" class="bLinkU" target="_blank">社交网络优化</a>(Social Media Optimization,即SMO) 为自己的网站达到推广的效用，成为站长们关注的新议题！
+				</p>
+				<p style="color:#666;text-align:justify;line-height:200%;font-size:12px;">
+					bShare能让网站内容迅速地被散播到人人网、QQ空间、新浪微博等社会化媒体，为网站带回潜在用户的同时，也带回巨大的回流量！
+				</p>
+			</div>
+			<div class="right" style="width:49%;">
+				<p class="left" style="color:#008;font-size:12px;width:110px;margin:5px 0 0 10px;">微博、SNS带给你的高质量用户，还会停留浏览更多的内容，创造更多分享。</p>
+				<img class="left" src="http://static.bshare.cn/images/whatisbshare-smo.png"/>
+				<p class="left" style="color:#c77417;font-size:12px;width:100px;margin:30px 0 0 -10px;">每一次的分享，就会在微博、SNS中创造24倍的曝光。</p>
+				<div class="clear"></div>
+				<p style="color:green;font-size:12px;margin:15px 0 0 150px;width:110px;text-align:center;">微博曝光所创造的点击转化率高达<font style="color:red;">33%</font>！</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+		<div class="clear spacer20"></div>
+		
+		<div class="div-gradient-light-top" style="height:40px;"></div>
+
+		<div style="padding:0 40px;">
+			<div class="left" style="width:49%;text-align:center;">
+				<img style="margin-top:20px;" src="http://static.bshare.cn/images/whatisbshare-burl.png"/>
+			</div>
+			<div class="right" style="width:49%;">
+				<div class="heading4" style="color:#08d;">稳步提升网站流量，一次分享可带回5-7倍流量</div>
+				<div class="spacer20"></div>
+				<p style="color:#666;text-align:justify;line-height:200%;font-size:12px;">
+					分享是<a class="bLinkU" target="_blank" href="/smo">社会化媒体优化（SMO）</a>的核心，bShare能够助您由病毒式的传播一传十、十传百地将内容扩散到整个社会化媒体。
+				</p>
+				<p style="color:#666;text-align:justify;line-height:200%;font-size:12px;">
+					您的网站内容将在短时间内传播的更广泛、更具影响力，并带回更多的潜在用户，导入巨大的社会化流量。
+				</p>
+				<p style="color:#666;text-align:justify;line-height:200%;font-size:12px;">
+					根据bShare研究，网站内容被分享到社会化媒体，就能创造大约12-24x曝光量，也就是每篇分享的内容会有高达24名好友看到，并且能够为您的网站带回5-7倍的回流量。
+				</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+		<div class="clear spacer20"></div>
+		
+		<div class="div-gradient-light-top" style="height:40px;"></div>
+
+		<div style="padding:0 40px;">
+			<div class="left" style="width:49%;">
+				<div class="heading4" style="color:#08d;">专业的分享数据统计，全面把握用户需求</div>
+				<div class="spacer20"></div>
+				<p style="color:#008;line-height:200%;font-size:12px;">
+					精准、深入的数据统计
+				</p>
+				<p style="color:#666;text-align:justify;line-height:200%;font-size:12px;">
+					bShare与各家SNS、微博深入整合，为您提供精确的分享、回流量数据，您可以实时掌握多个网站、子域名以及分各个页面的数据，唯有完整的分享、回访行为，bShare才会列入统计，保证行业内最精准!
+				</p>
+				<div class="spacer15"></div>
+				<p style="color:#008;line-height:200%;font-size:12px;">
+					首创回流量统计系统
+				</p>
+				<p style="color:#666;text-align:justify;line-height:200%;font-size:12px;">
+					bShare首创的回流量统计系统，让你清楚了解分享为您创造的实际价值——您哪些页面、最经常被分享，哪些平台、内容、用户在SNS、微博中为您创造最大的传播效果，以及实际的回访率！
+				</p>
+				<div class="spacer15"></div>
+				<p style="color:#008;line-height:200%;font-size:12px;">
+					<a href="/analytics" target="_blank" style="color:#008;" class="bLink">数据统计类型&gt;&gt;</a>
+				</p>
+				<div class="left" style="width:40%;">
+					<p style="color:#666;text-align:justify;line-height:200%;font-size:12px;">
+						* 网页浏览量<br/>
+						* 网页分享量<br/>
+						* 用户分享目的地平台分布
+					</p>
+				</div>
+				<div class="right" style="width:55%;">
+					<p style="color:#666;text-align:justify;line-height:200%;font-size:12px;">
+						* 子域名、分页查询分享数据<br/>
+						* 分享–回流量<br/>
+						* 社交影响力分析
+					</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="right" style="width:49%;text-align:center;">
+				<img style="margin-top:30px;" src="http://static.bshare.cn/images/whatisbshare-analytics.png"/>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="clear"></div>
+</div>
+
+<div class="clear"></div>
+
+<script type="text/javascript" charset="utf-8">
+	$(function() {
+		setBreadCrumbs(new Array('首页', 'bShare介绍')
+					, new Array("http://www.bshare.cn", "/intro"));
+	});
+</script>
+
+			</div>
+        
+	
+
+	<div class="clear"></div>
+	
+		<div style="background:#e5e5e5;min-width:980px;">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    .bottomnav .bLink { color: #333; }
+    
+    .follow-sinaminiblog, .follow-qqmb, .follow-sohuminiblog, .follow-neteasemb { background: url(http://static.bshare.cn/frame/images/logos/m2/sinaminiblog-off.gif); width:24px; height:24px; margin-right:5px; }
+    .follow-qqmb { background: url(http://static.bshare.cn/frame/images/logos/m2/qqmb-off.gif); }
+    .follow-sohuminiblog { background: url(http://static.bshare.cn/frame/images/logos/m2/sohuminiblog-off.gif); }
+    .follow-neteasemb { background: url(http://static.bshare.cn/frame/images/logos/m2/neteasemb-off.gif); }
+    .follow-sinaminiblog:hover { background: url(http://static.bshare.cn/frame/images/logos/m2/sinaminiblog.gif); }
+    .follow-qqmb:hover { background: url(http://static.bshare.cn/frame/images/logos/m2/qqmb.gif); }
+    .follow-sohuminiblog:hover { background: url(http://static.bshare.cn/frame/images/logos/m2/sohuminiblog.gif); }
+    .follow-neteasemb:hover { background: url(http://static.bshare.cn/frame/images/logos/m2/neteasemb.gif); }
+</style>
+
+<div class="container-center">
+	<div class="bottomnav">
+		<div class="bottomnav-inner">
+			<div class="heading4" style="padding-bottom:10px;">什么是bShare?</div>
+			<div><a title="bShare介绍" class="bLink" href="/intro">bShare介绍</a></div>
+			<div><a title="bShare特色" class="bLink" href="/intro/reasons">bShare特色</a></div>
+			<div><a title="支持的平台" class="bLink" href="/intro/services">支持的平台</a></div>
+			<!-- <div><a title="谁在用bShare?" class="bLink" href="/intro/bshareSites">谁在用bShare?</a></div> -->
+			<div class="clear"></div>
+		</div>
+		<div class="bottomnav-inner">
+			<div class="heading4" style="padding-bottom:10px;">为何用bShare?</div>
+			<div><a title="数据统计" class="bLink" href="/analytics">数据统计</a></div>
+			<div><a title="自定义按钮" class="bLink" href="/introCustomize">自定义按钮</a></div>
+			<div><a title="bShare一键通" class="bLink" href="/products/bsync">bShare一键通</a></div>
+			<div><a title="bURL" class="bLink" href="/products/burl">bURL</a></div>
+			<!--
+			<div><a title="社交网络优化 (SMO)" class="bLink" href="/smo">社交网络优化 (SMO)</a></div>
+			<div><a title="API概述" class="bLink" href="/apiOverview">API概述</a></div>
+			-->
+			<div class="clear"></div>
+		</div>
+		<div class="bottomnav-inner">
+			<div class="heading4" style="padding-bottom:10px;">获取bShare!</div>
+			<div><a title="一般网站" class="bLink" href="/help/install">一般网站</a></div>
+			<div><a title="更多样式" class="bLink" href="/moreStyles">更多样式</a></div>
+			<div><a title="bShare图片分享" class="bLink" href="/products/imageShare">bShare图片分享</a></div>
+			<div><a title="bShare高级" class="bLink" href="/products/premiumServices">bShare高级</a></div>
+			<!-- 
+			<div><a title="bShare企业版" class="bLink" href="/bshareEnterprise">bShare企业版</a></div>
+			<div><a title="Blogbus用户" class="bLink" href="/blogbusRegister">Blogbus用户</a></div>
+			<div><a title="Discuz!用户" class="bLink" href="/discuzx1Register">Discuz!用户</a></div>
+			<div><a title="Wordpress用户" class="bLink" href="/wordpressRegister">Wordpress用户</a></div>
+			-->
+			<div class="clear"></div>
+		</div>
+		<div class="bottomnav-inner">
+			<div class="heading4" style="padding-bottom:10px;">浏览器插件</div>
+			<div><a title="bShare书签" class="bLink" href="/products/bookmark">bShare书签</a></div>
+			<div><a title="浏览器插件" class="bLink" href="/browserPlugins">浏览器插件</a></div>
+			
+			<!--
+			<div><a title="IE插件" class="bLink" href="/browserPlugins">IE插件</a></div>
+			<div><a title="Firefox插件" class="bLink" href="/browserPlugins">Firefox插件</a></div>
+			<div><a title="Chrome插件" class="bLink" href="/browserPlugins">Chrome插件</a></div>
+			<div><a title="Other插件" class="bLink" href="/browserPlugins">Other插件</a></div>
+			-->
+
+			<div class="heading4" style="padding:13px 0 10px;">开放平台</div>
+			<div><a title="展览厅" class="bLink" href="/gallery">展览厅</a></div>
+			<div class="hidden"><a title="实验室" class="bLink" href="/labs">实验室</a></div>
+
+			<div class="clear"></div>
+		</div>
+		<div class="bottomnav-inner">
+			<div class="heading4" style="padding-bottom:10px;">关于我们</div>
+			<div><a title="关于bShare" class="bLink" href="/about">关于bShare</a></div>
+			<!-- 
+			<div><a title="关于buzzinate" class="bLink" target="_blank" href="http://www.buzzinate.com/aboutus_company.php">关于buzzinate</a><img style="margin:0 0 3px 3px;" src="http://static.bshare.cn/images/icon_new_window.gif"/></div>
+			-->
+			<div class="hidden"><a title="江湖" class="bLink" href="http://jianghu.bshare.cn">江湖</a><img style="margin:0 0 3px 3px;" src="http://static.bshare.cn/images/icon_new_window.gif"/></div>
+			<div><a title="联系我们" class="bLink" href="/contact">联系我们</a></div>
+			<div><a title="招贤纳士" class="bLink" href="/career">招贤纳士</a></div>
+			<div><a title="bShare博客" class="bLink" target="_blank" href="http://www.bshare.cn/blog">bShare博客</a><img style="margin:0 0 3px 3px;" src="http://static.bshare.cn/images/icon_new_window.gif"/></div>
+			
+			<div class="heading4" style="padding:13px 0 10px;">关注bShare</div>
+            <div>
+                <a class="follow-sinaminiblog inlineBlock" href="http://weibo.com/bshare" target="_blank"></a>
+                <a class="follow-qqmb inlineBlock" href="http://t.qq.com/bShare" target="_blank"></a>
+                <a class="follow-sohuminiblog inlineBlock" href="http://t.sohu.com/u/8642674" target="_blank"></a>
+                <a class="follow-neteasemb inlineBlock" href="http://t.163.com/4104388906" target="_blank" style="margin-right:0;"></a>
+            </div>
+			
+			<div class="clear"></div>
+		</div>
+		<div class="bottomnav-inner">
+			<div class="heading4" style="padding-bottom:10px;">支持</div>
+			<div><a title="FAQ" class="bLink" href="/help">帮助</a></div>
+			<div><a title="问题反馈" class="bLink" href="/feedback">问题反馈</a></div>
+			<div><a title="使用条款" class="bLink" href="/terms">使用条款</a></div>
+			<div><a title="隐私条款" class="bLink" href="/privacy">隐私条款</a></div>
+			<div><a title="网站地图" class="bLink" href="http://www.bshare.cn/sitemap.html" target="_blank">网站地图</a></div>
+                  <div id="langLinkDiv" class="hidden"><a id="languageLink" class="bLink" href="javascript:;">Language</a><img src="http://static.bshare.cn/images/lang-icon.png" style="margin:0 0 -2px 3px;"/></div>
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="clear"></div>
+</div>
+
+			
+			<div style="background:#e5e5e5;">
+				<div class="clear spacer10"></div>
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-center" style="font-size:10px;text-align:center;width:auto;">
+	
+		<span><a target="_blank" title="沪ICP备09026724号" style="text-decoration:none;color:#666;" href="http://www.miitbeian.gov.cn/">沪ICP备09026724号</a></span>
+		<div class="clear spacer2"></div>
+	
+	<span style="color:#666;">&copy; 2009-2014 <a title="擘纳" href="http://www.buzzinate.com" target="_blank" class="bLinkOrangeU">擘纳</a>（上海）信息科技有限公司。版权所有。</span>
+    <div class="clear spacer15"></div>
+    <div style="text-align: center;">
+        <a style="margin-right:10px;" target="_blank" href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=20120703161312773">
+        <img src="http://static.bshare.cn/images/sgs_license1.gif" border=0 /></a>
+        <a id='___szfw_logo___' href='https://search.szfw.org/cert/l/CX20130327002375002858' target='_blank'><img src='http://static.bshare.cn/images/cx_license.gif'></a>
+<script type='text/javascript'>(function(){document.getElementById('___szfw_logo___').oncontextmenu = function(){return false;}})();</script>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="right" style="margin:-11px 15px 0 0;"><a target="_blank" title="Buzzinate" href="http://www.buzzinate.com/"><img alt="a buzzinate company" title="Buzzinate" src="http://static.bshare.cn/images/buzzinate-company-grey.png"/></a></div>
+<div class="clear"></div>
+				<div class="clear spacer5"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	
+	<div class="div-gradient-dark-top" style="height:50px;min-width:980px;"></div>
+	
+	<!-- FLOATING QQ SERVICE START -->
+	<a id="qqservicetab" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=800087176&site=qq&menu=yes"></a>
+    <!-- <img src="http://static.bshare.cn/images/tab-service-zh.gif"/> -->
+	<!-- FLOATING QQ SERVICE START -->
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- LANGUAGE POPUP -->
+<div id="languagemenupopup" class="language-menu-popup">
+	<span></span>
+	<ul>
+	    <li class="popupliheader">Choose your language</li>
+	    <li style="padding-top:10px;"><img style="margin-bottom:-1px;" alt="en" src="http://static.bshare.cn/images/lang-en.gif"/>&nbsp;<a title="English" class="bLinkU" href="/intro?request_locale=en">English</a></li>
+	    <li><img style="margin-bottom:-1px;" alt="zh" src="http://static.bshare.cn/images/lang-zh.gif"/>&nbsp;<a title="简体中文" class="bLinkU" href="/intro?request_locale=zh">简体中文</a></li>
+	    <li><img style="margin-bottom:-1px;" alt="zh_TW" src="http://static.bshare.cn/images/lang-zh_TW.gif"/>&nbsp;<a title="繁體中文" class="bLinkU" href="/intro?request_locale=zh_TW">繁體中文</a></li>
+	</ul>
+</div>
+<!-- LANGUAGE POPUP END -->
+
+<script type="text/javascript" charset="utf-8">
+	$(function() {
+		$("#languageLink").tooltip({
+			tip: "#languagemenupopup",
+			position: "top right",
+			delay: 1000,
+			effect: "fade"
+		});
+		
+		
+			var showLang1 = false;
+			var showLang2 = false;
+			$(document).keypress(function(e) {
+				if (e.keyCode == 108) {
+					showLang1 = true;
+					showLang2 = false;
+					return;
+			    }
+				if (showLang1 && e.keyCode == 110) {
+					if (showLang2) {
+						showLang1 = false;
+						showLang2 = false;
+						return false;
+					}
+					showLang2 = true;
+					return;
+			    }
+				if (showLang1 && showLang2 && e.keyCode == 103) {
+					$("#langLinkDiv").show();
+			    }
+				showLang1 = false;
+				showLang2 = false;
+			});
+		
+	});
+</script>
+	
+	<!-- Global floating notification system -->
+	<!-- Global floating notification start -->
+<div id="notifications" class="hidden">
+	<div class="notification-bar-container">
+		<div class="notification-bar-bkg"></div>
+		<div class="notification-bar">
+			<div class="notification-bar-contents">
+				<div class="notification-msg heading1"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Global floating notification END -->
+	<!-- Global floating notification system -->
+	
+	<!-- SCRIPTS -->
+	<script type="text/javascript" charset="utf-8">
+	    $(function() {
+		    // temp fix for chrome HTML5 validation
+	    	$('form').attr('novalidate', 'novalidate');
+		    
+	    	// for leftMenus
+	    	var s = "intro".replace("/", "-");
+			var rel = $(".leftMenu-" + s).addClass("active").parent().parent().attr("id");
+			var toCl = $("div[rel=" + rel + "]").addClass("active");
+			if (typeof leftMenuHelp !== "undefined") toCl.click();
+			
+			$(".leftMenuTitle-intro").addClass("bLeftMenuTitleActive");
+	    });
+	</script>
+
+	<script type="text/javascript" charset="utf-8">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript" charset="utf-8">
+		try {
+			var pageTracker = _gat._getTracker("UA-11228114-1");
+			pageTracker._setDomainName("www.bshare.cn");
+			pageTracker._trackPageview();
+		} catch(err) {}
+	</script>
+	<!-- SCRIPTS-END -->
+</body>
+</html>

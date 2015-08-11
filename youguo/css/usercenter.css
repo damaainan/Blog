@@ -1,0 +1,301 @@
+﻿/*欢迎提醒导航*/
+.userdh{width:1080px;
+        height:28px;
+		float:left;
+		border:1px solid #D6D6D6;
+		padding:6px 10px 2px;}
+.userdh p{float:left;
+         color:black;
+		 line-height:30px;}	
+.userdh p span{color:#FF6600;}	
+.userdhk{float:left;
+         border:1px solid #D6D6D6;
+		 padding:2px 6px;
+		 margin:0px 4px;}	
+.userdhk1{color:#367EC1;}	
+.userdhk2 {color:#464646;}
+.userdhk2 span{color:#FF6600;}	
+.userdhk2:hover {color:black;}
+.userdh img{width:10px;
+          height:16px;
+		  float:left;
+		  margin:7px 5px 7px 500px;}	
+/*左侧栏目*/
+.usercenterl{width:183px;
+            float:left;
+			background:white;
+			border-left:1px solid gray;
+			border-right:1px solid gray;
+			border-bottom:1px solid gray;
+			margin:12px 15px auto 0;
+			}
+.usercenterl>h3 {font-weight:bold;
+               line-height:30px; 
+			   background:#EFEFEF; 
+			   width:170px;
+			   font-size:12px;
+			    padding-left:13px;
+			   color:#000000;
+			   border-top:2px solid green;		
+			  }			
+.usercenterl p {line-height:30px;
+                width:170px; 
+				padding-left:13px;
+				color:black;
+				border-radius:3px;}			
+
+.usercenterl p:hover{color:green;
+                    text-decoration:underline;}
+
+/*右侧栏目*/
+#jsartright0{display:block;position:relative;}
+#jsartright1{display:none;position:relative;}
+#jsartright2{display:none;position:relative;}
+#jsartright3{display:none;position:relative;}
+#jsartright4{display:none;position:relative;}
+#jsartright5{display:none;position:relative;}
+#jsartright6{display:none;position:relative;}
+#jsartright7{display:none;position:relative;}
+#jsartright8{display:none;position:relative;}
+#jsartright9{display:none;position:relative;}
+#jsartright10{display:none;position:relative;}
+#jsartright11{display:none;position:relative;}
+#jsartright12{display:none;position:relative;}
+#jsartright13{display:none;position:relative;}
+#jsartright14{display:none;position:relative;}
+/*会员首页*/
+.usercenterr{width:878px;
+           float:left;
+		   border:1px solid gray;
+		   padding:0 10px 10px 10px;}
+.usercenterr p{float:left;}
+.usercenterr h3{color:#666666;
+            text-shadow:1px 1px #C9F7CB;
+			width:870px;
+			float:left;
+			padding:5px 0 0 0;
+			background:#F6F6F6;
+			text-shadow:-1px 1px #F7F7CB;}/*936666 #C9F7CB #F7F7CB*/
+.usercenterr h3 span{color:#008AC4;
+                  text-shadow:1px 1px #C0F7DB;
+				  }/*#C0F7DB*/
+.usercenterr1{margin:12px 0 0 0;
+             padding-bottom:20px;}
+.usercenterr1 h3{}
+.usercenterr1 h3 span{}
+.usercenterr2{margin:12px 0 0 0;}
+.usercenterr2 h3{border-bottom:1px solid #D4D4D4;}
+.usercenterr3{margin:12px 0 10px  0;}
+.usercenterr3 h3{font-size:12px;
+                 margin-top:0;
+                border-bottom:1px solid #D4D4D4;}
+.usercenterr3 h3 a{float:right; 
+                padding:3px 6px;
+				background:#F0F0F0;
+				font-weight:normal;
+				margin:0 0 3px 0;
+				border:1px solid #D0D0D0;
+				border-radius:2px;}
+.usercenterr3 h3 a:visited{color:#464646;}				
+.usercenterr3 h3 a:hover{color:black;}				
+.usercenterr2 p,.usercenterr3 p{float:left;color:#7E7E7E;margin:3px 0 10px 0;}
+.userwell{width:400px;
+          float:left;}
+.userwell p{color:#464646;
+            line-height:20px;
+			width:400px;
+			margin:5px 0 0 10px;
+			border-bottom:1px solid #CFDDE0;}
+.userwell p span{color:#41A53A;}	
+.userwell p a{float:left;
+            color:#367EC1;
+			float:right;
+			padding-left:5px;
+			border-left:1px solid #C5D7E6;}		
+.userwelr{width:400px;
+          float:left;
+		  margin-left:50px;}
+.userwelr h4{background:#EDEEF4;
+            border:1px solid #D4D4D4;
+			float:left;
+			width:383px;
+			color:#000000;
+			line-height:35px;
+			padding-left:15px;}	
+/*暂缺滚动广告*/
+
+ /*我的订单*/
+.usermyorder{width:900px;
+            float:left;
+			margin-top:12px;}
+.usermyorderh{height:40px;
+             width:892px;
+			 padding:0 0 0 8px;
+			 float:left;
+			 background:#F7F7F9;}    
+.usermyorder h3{display:inline;
+                float:left;
+				padding:8px 4px;
+				color:black;}   
+/* .usermyorder h3 a:visited{color:black;}   
+.usermyorder h3 a:hover{color:white;}   */ 
+#jsorderk1{background:#36A803;color:white;}    
+/* .usermyorder ul */.usercenterul{width:900px;float:left;background:white;margin-top:5px;}
+/* .usermyorder ul li */.usercenterli{width:130px;
+                text-align:center;
+				float:left;
+				font-size:12px;
+				display:inline;
+				margin-top:5px;
+				line-height:20px;
+				border-bottom:2px solid #D4D4D4;}
+/* .usermyorder ul li */.usercenterli:first-child{width:250px;border-bottom:2px solid #41A53A;}	
+
+.usercenterulcon{width:900px;
+                 float:left;
+				 margin-top:3px;}			
+.usercenterulcon li{width:130px;
+                text-align:center;
+				float:left;
+				font-size:12px;
+				color:#7E7E7E;
+				display:inline;
+				margin-top:5px;
+				line-height:20px;
+				border-bottom:1px dotted #DEDEDE;}
+.usercenterulcon li:first-child{width:250px;text-align:left;}	
+.usercenterulcon li span{color:#41A53A;}
+.usercenterulcon li a:visited{color:blue;}
+.usercenterulcon li a:hover{color:#FF9900;}
+.usercenterulcon li button{width:100px;
+                        height:16px;
+						text-align:center;
+						background:#F2F2F2;
+						line-height:16px;}
+.usercenterulcon li button:hover{background:white;}
+ /*积分历史*/
+.userscorehistory{width:900px;float:left;margin-top:12px;} 
+.userscorehistory h3{width:894px;
+                    float:left;
+					padding:4px 0 4px 6px;
+					background:#F7F7F9;
+					margin-bottom:15px;
+					border-bottom:3px solid #F2F2F2;}
+.userscorehistory>p{width:443px; 
+                   float:left;
+				   margin:0 100px 5px 0;
+				   border:1px solid #C4D6DA;
+				   padding:5px 0 5px 5px;}
+.userscorehistory p span{color:#FC6600;}
+ .userscorehistory p a {float:right;} 
+.userscorehistory p a:visited{color:#336699;}
+.userscorehistory p a:hover{color:#FF9900;}
+.userscorehistory h3{}
+#scorelaw{width:300px;margin:0 0 0 150px;float:right;}
+#scorelaw h5{float:left;}
+#scorelaw p{float:left;width:300px;line-height:20px;}
+ /*积分兑换代金券*/
+ 
+ /*我的代金券*/
+ 
+ /*我的预存款*/
+ 
+ /*预存款充值*/
+.usercashstore{width:900px;float:left;margin-top:12px;} 
+.usercashstore>h3{width:894px;
+                    float:left;
+					padding:4px 0 4px 6px;
+					background:#F7F7F9;
+					margin-bottom:3px;
+					border-bottom:3px solid #F2F2F2;} 
+.usercashstore>p{width:888px;
+                 float:left;
+				 border:1px solid #C4D6DA;
+				 color:#333333;
+				 padding:10px 0 5px 10px;} 
+.usercashstore>p span{color:#41A53A;}
+
+.storecash{width:894px;
+			float:left;
+			padding:4px 0 4px 6px;
+			margin:5px 0;
+			border:1px solid #333333;}
+			
+.onlinestorecash{width:250px;
+                 float:left;
+				 margin:10px 150px 25px 10px;
+				 line-height:30px;}			
+.onlinestorecash h3{}			
+.onlinestorecash  p{}
+.onlinestorecash  input[type="text"]{height:25px;border:1px solid gray;}
+
+.ygstorecash{width:250px;float:left;margin:10px 150px 25px 10px;line-height:30px;}
+.ygstorecash input[type="text"]{height:25px;border:1px solid gray;}
+.ygstorecash input[type="password"]{height:25px;border:1px solid gray;}
+
+
+.gostore{color:white;
+         background:#E53929;
+         padding:5px 10px;
+		 font-size:16px;
+		 font-weight:bold;
+		 margin:5px 15px;
+		 border:1px solid #F9B08E;
+		 box-shadow:1px 1px #E53929,-1px -1px #E53929;}
+ /*我的优果卡*/
+ 
+ /*商品收藏*/
+ 
+ /*到货通知*/
+ 
+ /*评论与咨询*/
+ 
+ /*最近购买的商品*/
+ 
+ /*个人信息*/
+ 
+ /*修改密码*/
+ 
+ /*收货地址*/
+.goodaddress{width:900px;float:left;margin-top:12px;}	
+.goodaddress h2{width:894px;
+				float:left;
+				padding:4px 0 4px 6px;
+				background:#F7F7F9;
+				margin-bottom:3px;
+				display:inline;
+				border-bottom:3px solid #F2F2F2;}		
+.goodaddress h2 p{display:inline;font-size:12px;font-weight:normal;color:#333333;}
+.goodaddress h2 p:hover{color:#FF9900;}
+.goodaddress h2 p span{color:green;font-weight:bold;}
+#addressplus{float:left;padding:2px 10px;
+             background:#FBD393;
+			margin:15px 0 15px 120px;
+			 border:1px solid #F2A446;border-radius:2px;}
+#addressplus{background:#FFFAF3;}
+#addresssup{float:left;
+            padding:2px 10px;
+			margin:15px 0 15px 10px;
+			background:#FEFEFE;
+			border:1px solid #DADADA;
+			border-radius:2px;}
+#addresssup{background:white;}
+#jszone1{display:none;}
+#jszone2{display:none;}
+#jszone3{display:none;}
+#jszone4{display:none;}
+
+.lastuser{width:860px;float:left;background:white;padding:10px 0 10px 40px;}
+.lastuser p{font-size:14px;color:#787878;padding:5px;}
+.lastuser p input{height:20px;border:1px solid #DADADA;}
+.lastuser p textarea{resize:none;border:1px solid #DADADA;}
+.lastuser p select{border:1px solid #DADADA;}
+.lastuser p{}
+
+
+
+
+
+
+
+

@@ -1,0 +1,148 @@
+﻿*{margin:0;
+  padding:0;
+  border:0;}
+a {text-decoration:none;} 
+a:visited{color:#333333;} 
+a:hover{color:#FF9900;} 
+body{background:url(../img/qita/loginback.jpg);
+     width:1000px;
+	  margin:0 auto 0 auto;}
+	 /*登录部分页面*/ 
+.loreglogo{width:1000px;
+           float:left;
+		   }
+.loreglogo img{width:309px;
+             height:56px;
+			 float:left;}	
+.logomain{width:998px;
+          background:white;
+		  float:left;
+		  border:1px solid #DDDDDD;
+		  border-radius:3px;
+		  margin-top:15px;}	
+
+.loginform{width:936px;
+           border:1px solid #DDDDDD;
+		   float:left;
+		   margin:40px 30px;}	
+.loginform p{line-height:40px;
+            float:left;
+			display:block;
+			clear:left;
+			font-size:14px;
+			color:#434343;
+			margin:10px 100px 5px 40px;}
+.loginform p:first-child{margin-left:10px;}	
+.loginform p:last-child{margin:0 0 15px 90px;}	
+.loginform input{height:25px;
+               border:1px solid #D5D5D5;
+			   }
+.loginform input[type="submit"]{background:#ED8D17;
+			 border:1px solid #DD771A;
+			 border-radius:2px;
+			 color:white;
+			 height:30px;
+			 text-shadow:1px 1px #DD991A;
+			 font-weight:bold;
+			 padding:7px 15px ;}	
+
+.loginform input[type="submit"]:hover{background:#EA8811;}			 
+.loginform p span{color:red;}	
+.logomain h3{float:left;
+            font-size:14px;
+			margin:0px 820px 10px 60px;
+			display:block;
+			
+			color:black;}
+	/*合作账号登录*/		
+.coopweglogin{width:25px;
+              height:25px;
+			  float:left;
+			  display:inline;
+			  border:1px solid #DDDDDD;
+			  margin:0px 2px;}
+.coopweglogin a{width:25px;
+              height:25px;
+			  float:left;}			  
+.webcoop1{margin-left:60px;background:url(../img/qita/youguo-header2.gif) no-repeat left 0 top -2px;}			  
+.webcoop2{background:url(../img/qita/youguo-header2.gif) no-repeat left 0 top -44px;}			  
+.webcoop3{background:url(../img/qita/youguo-header2.gif) no-repeat left 0 top -87px;}			  
+.webcoop4{background:url(../img/qita/youguo-header2.gif) no-repeat left 0 top -136px;}			  
+.webcoop5{background:url(../img/qita/youguo-header2.gif) no-repeat left 0 top -185px;}			  
+.webcoop6{background:url(../img/qita/youguo-header2.gif) no-repeat left 0 top -230px;}			  
+.webcoop7{background:url(../img/qita/youguo-header2.gif) no-repeat left 0 top -277px;}			  
+.webcoop8{background:url(../img/qita/youguo-header2.gif) no-repeat left 0 top -326px;}			  
+.logomainp{clear:left;float:left;margin:80px 0 30px 30px;}
+
+/*页面注册部分*/
+.regiform{border:0;}
+.yanzheng{width:65px;}
+.getjiaoyan{width:85px;
+           border:1px solid gray;
+		   border-radius:4px;
+		   margin-left:4px;
+		   background:#F6F6F6;
+		   color:#333333;}
+.agreement{margin-left:70px;float:left;}
+/*页脚部分*/
+.footer{width:1100px;
+         height:100px;
+		 float:left;
+		 font-size:12px;
+		 text-align:center;
+		 background:rgba(0,0,0,0); }	
+/*悬浮块部分*/
+.logoxf{position:absolute;
+         top:32px;		 
+		 background:white;
+		 width:140px;
+		 height:90px;
+		 z-index:-1;}
+.logoxfl{left:0px;}
+.logoxfr{right:0px;}
+.dhxf{position:absolute;
+		 top:122px;		 
+		 background:#36A803;
+		 width:140px;
+		 height:35px;
+		 z-index:-1;}
+.dhxfl{left:0px;}
+.dhxfr{right:0px;}
+/*.footerxf{position:absolute;
+		 bottom:0px;		 
+		 background:white;
+		 width:140px;
+		 height:100px;
+		 z-index:-1;}
+.footerxfl{left:0px;}
+.footerxfr{right:0px;}
+	*/	
+/*返回按钮等*/		 
+.fanhuibtn{position:fixed;
+           width:50px;
+		   height:50px;
+		   right:5px;
+		   background:#36A803;
+		   color:white;
+		   font-size:14px;
+		   text-align:center;
+		   line-height:50px;}
+.fanhuibtn p{color:white;}		   
+.fhbtn1{bottom:10px;background:gray;}		   
+.fhbtn2{bottom:65px;}		   
+.fhbtn3{bottom:120px;}		   
+.fhbtn4{bottom:175px;}		   
+.fhbtn5{bottom:230px;}		   
+.fhbtn6{bottom:285px;}		   
+
+
+
+
+
+
+
+
+
+
+
+		   

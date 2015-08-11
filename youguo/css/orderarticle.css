@@ -1,0 +1,83 @@
+﻿*{margin:0;
+  padding:0;
+  border:0;}
+a {text-decoration:none;} 
+a:visited{color:#333333;} 
+a:hover{color:#FF9900;} 
+body{background:#F2F2F2;
+      width:1000px;
+	  margin:0 auto 0 auto;}
+ul{list-style-type:none;}	  
+p{font-size:12px;}
+#loreglogo{width:1000px;
+           float:left;
+		   background:white;}
+#loreglogo img{width:309px;
+             height:56px;
+			 float:left;}	  
+h2{height:40px;
+   width:985px;
+   line-height:40px;
+   background:#5F7199;
+   color:white;
+   float:left;
+   padding-left:15px;}
+.orarthead{width:998px;float:left;border:1px solid #BABABA;margin-top:10px;background:#FFFFEE;} 
+.orarthead h4{float:left;line-height:30px;font-size:12px;margin-left:10px;}
+.orarthead h4 span{color:#FF6600;}
+.orarthead h4 p{font-weight:normal;float:left;}
+.orarthead>p{font-size:12px;float:right;line-height:30px;}
+
+.orartlistinfo{width:1000px;float:left;background:white;}
+
+
+.orartlist {width:1000px;
+           margin:5px 0px;
+		   float:left;
+		   border-bottom:1px solid #EEEEEC;
+		   padding-bottom:10px;}	
+.orartlist  li:first-child{width:360px;}
+.orartlist  li{display:inline;
+           float:left;width:160px;
+		   text-align:center;
+		   
+		   padding:5px 0; 
+		   font-size:12px;}	
+/*列表名*/
+.orartlistname li:first-child{border-bottom:2px solid #41A53A;}	
+.orartlistname li{border-bottom:2px solid #D4D4D4;color:#464646;}
+/*列表内容*/	
+.orartlistcont li img{width:50px;height:50px;float:left;margin:0px 10px 5px 10px;}	
+.orartlistcont li>a{float:left;}
+.orartlistcont li>a:visited{color:#336699;} 
+.orartlistcont li>a:hover{color:#FF9900;} 
+.orartlistcont li>span{color:#41A53A;} 
+.orartlistcont li p{line-height:20px;}
+.orartlistcont li p:hover{border:1px solid #E3E3E3;border-radius:3px;}
+
+.orartlistp{width:300px;float:right;margin:10px;font-size:14px;line-height:25px;}
+.orartlistp span{color:#FF6600;font-weight:bold;}
+
+.orartlistinfo>p{width:1000px;float:left;text-align:center;line-height:25px;}
+.orartlistinfo>p span{color:green;}
+.orartlistinfo>p a:visited{color:blue;}
+.orartlistinfo>p a:hover{color:#FF9900;}
+.orartlistinfo>p button{color:white;
+               border:1px solid #DD771A;
+			   border-radius:2px;font-weight:bold;
+			   background:#D96C0B;
+			   padding:3px 5px;}
+.orartlistinfo>p button:hover{background:#EC983A;}
+.orartinfo{width:998px;border:1px solid #DADADA;float:left;background:white;}
+.orartinfo h4{float:left;width:900px;margin:5px 25px}
+.orartinfo p{color:#333333;float:left;width:400px;margin:5px 40px;}
+
+.footer{width:1000px;
+         height:90px;
+		 position:relative;
+		 float:left;
+		 text-align:center;
+		 background:white; }
+
+
+

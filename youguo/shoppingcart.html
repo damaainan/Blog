@@ -1,0 +1,283 @@
+﻿<!DOCTYPE HTML>
+<html>
+ <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/article.css">
+	<link rel="stylesheet" type="text/css" href="./css/shoppingcart.css">
+	<title>优果网</title>
+ </head>
+ <body>
+   <div id="header">
+      <div id="dingbu">
+    
+	    <!--头部登录注册部分-->
+	     <p>欢迎来到优果网 请<a href="login.html"target="_blank">登录</a></p>
+		 <ul class="gldl">
+		    <li id="gldl1"><a href="" target="_blank"></a></li>
+		    <li id="gldl2"><a href="" target="_blank"></a></li>
+		    <li id="gldl3"><a href="" target="_blank"></a></li>
+		    <li id="gldl4"><a href="" target="_blank"></a></li>
+		    <li id="gldl5"><a href="" target="_blank"></a></li>
+		    <li id="gldl6"><a href="" target="_blank"></a></li>
+		    <li id="gldl7"><a href="" target="_blank"></a></li>
+		    <li id="gldl8"><a href="" target="_blank"></a></li>
+		 </ul>
+		 <p class="prelinel"><a href="">注册</a></p>
+		 <a href=""><h4></h4><span>加关注</span></a>
+		 <p class="dingbup"><a href="">我的订单&nbsp<span></span></a></p>
+		
+		 <p class="preliner"><a href="">会员中心</a></p>
+		 <p class="preliner"><a href="">帮助中心</a></p>
+	  </div>
+	  <!--logo 和搜索部分 -->
+      <div id="logo">
+	     <div class="logoimg">
+		    <a href="" target="_blank"><img src="./img/shouye/logo.gif" ></a>
+		 </div>
+	     <div class="ssk">
+		    <form action="" method="get">
+			<input type="text" name="resou" id="ssksr" >
+			<input type="submit" name="" id="sskbtn" value="搜索">
+			</form>
+			<ul>
+			   <li><span>热门搜索：</span></li>
+			   <li><a href=""target="_blank">奇异果</a></li>
+			   <li><a href=""target="_blank">芒果</a></li>
+			   <li><a href=""target="_blank">苹果</a></li>
+			   <li><a href=""target="_blank">牛油果</a></li>
+			   <li><a href=""target="_blank">脐橙</a></li>
+			   <li><a href=""target="_blank">草莓</a></li>
+			</ul>
+		 </div>
+	   </div>
+		<div class="logoxf logoxfl">
+		</div>
+		<div class="logoxf logoxfr">
+		</div>
+   </div>
+   <div class="shoppingcart">	 
+	 <!--购物车头部-->
+	 <div class="scarthead">
+		 <a href="shoppingcart.html"><h3 class="cartpageh1">购物车
+		 
+		   <div class="arrowup">
+		    ◣
+		   </div>	
+		   <div class="arrowdown">
+		    ◤
+		   </div>	
+		   <div class="arrowblank">
+		    
+		   </div>			   
+		   <div class="arrowup1">
+		    ◣
+		   </div>	
+		   <div class="arrowdown1">
+		    ◤
+		   </div>	
+		 </h3></a>
+		 <a href="order.html"><h3 class="orderpageh1">填写订单并确认
+		   <div class="arrowup arrowupc1 ">
+		    ◣
+		   </div>	
+		   <div class="arrowdown arrowdownc1">
+		    ◤
+		   </div>	
+		   <div class="arrowblank">
+		    
+		   </div>			   
+		   <div class="arrowup1">
+		    ◣
+		   </div>	
+		   <div class="arrowdown1">
+		    ◤
+		   </div>			 
+		 </h3></a>
+		 <a href="succorder.html"><h3 class="succorderpageh1">成功提交订单</h3></a>
+	 </div>
+	 
+	 
+	 <!--购物车商品列表-->
+	 <div class="cartlist">
+	     <h3>商品列表</h3>
+		 <ul class="cartlistname">
+		    <li>商品名称</li>
+		    <li>单价</li>
+		    <li>数量</li>
+		    <li>小计</li>
+		    <li>积分</li>
+		    <li>操作</li>
+		 </ul>
+		 <ul class="cartlistcont">
+		   <li><a href=""><img src="./img/cart/list1.jpg"></a><a href="" >【特惠】美国新奇士柠檬10个</a></li>
+		   <li>￥<span id="danjia">28.00<span></li>
+		   <li><!--通用计数器部分-->
+		       <!--文章详情通用计数器部分-->
+			   
+				<div class="artjishuqi">
+					
+					<a href="javascript:abdce();" class="artjishuqisub">-</a>
+					<input type="text" id="shuliang" value="1"  onChange="abc()" class="artjishuqinum">
+					<a href="javascript:abdc();" class="artjishuqisub">+</a>
+                </div>
+			  
+		   </li>
+		   <li>￥<span id="xiaoji">28.00</span></li>
+		   <li id="xiaoji2">28</li>
+			   <script>
+					function $(e){
+					return document.getElementById(e);
+					}
+					function abdc(){
+						var sl=$('shuliang').value;
+							sl=parseInt(sl)+1;
+							$('shuliang').value=sl;
+					}
+					function abdce(){
+						var sl=$('shuliang').value;
+							if (sl>1){
+								sl=parseInt(sl)-1;
+							}
+							$('shuliang').value=sl;
+					}
+					function abc(){
+						var sl=$('shuliang').value;
+							if (sl>1){
+								sl=parseInt(sl);
+							}else{
+								sl=1
+							}
+							$('shuliang').value=sl;
+					}
+                 var xie1=document.getElementById("danjia").innerHTML;
+				 var bv=document.getElementById("shuliang").innerHTML;
+				 var bad=xie1;
+				 document.getElementById("xiaoji").innerHTML=bad;
+				 document.getElementById("xiaoji2").innerHTML=bad;
+				</script>
+		   
+			   
+		   
+		   <li>
+		      <p id="onep"><a href=""><span>★</span>&nbsp收藏</a></p>
+		      <p id="twop"><a href=""><span>×</span>&nbsp删除</a></p>
+		   </li>
+		 </ul>
+		 <div class="carttogether">
+		    <p><span>凑单得优惠&nbsp</span>
+			  99元全场包邮
+			  <a href="">&nbsp马上去凑单</a>
+			</p>
+	     </div>
+		 <div class="cartcount">
+			 <a href=""><p id="countp1">继续购物</p></a>
+			 <p>商品金额：<span>￥28.00</span> 合计(不含运费)：<b>￥28.00</b></p>
+			 <a href="order.html"><p id="countp2">| >>下单结算</p></a>
+		 </div>	 
+	 </div>
+	 
+	 
+	 
+	 
+	 <!--购物车凑单必备-->
+	 <div class="knocktogether">
+		 <h3>每日精选：</h3>
+		 <p>热卖鲜果，<span>凑满99元免邮费</span></p>
+		 <h4>凑单必备</h4>
+     </div>
+	 <div class="carttogchoice">
+			 <div class="cartlistlbxq"><!--通用推荐热评部分列表详情-->
+			   <a href="article_article.html" target="_blank"><img src="./img/liebiao/liebiao1.jpg" alt=""></a>
+			   <p class="cartlistlbxqp1"><a href="article_article.html"  target="_blank">平安果1份（两种包装颜色随机发货）</a></p>
+			   <p class="cartlistlbxqp4"><span>￥19.00</span></p>
+			   <p class="cartlistlbxqp3"><span>￥9.00</span></p> 
+			   <div class="carttrolley">
+                  <a href="" title="加入购物车"><p>加入购物车</p></a>
+			   </div>
+			  </div>
+			 <div class="cartlistlbxq"><!--通用推荐热评部分列表详情-->
+			   <a href="article_article.html" target="_blank"><img src="./img/liebiao/liebiao1.jpg" alt=""></a>
+			   <p class="cartlistlbxqp1"><a href="article_article.html"  target="_blank">平安果1份（两种包装颜色随机发货）</a></p>
+			   <p class="cartlistlbxqp4"><span>￥19.00</span></p>
+			   <p class="cartlistlbxqp3"><span>￥9.00</span></p> 
+			   <div class="carttrolley">
+                  <a href="" title="加入购物车"><p>加入购物车</p></a>
+			   </div>
+			  </div>
+			 <div class="cartlistlbxq"><!--通用推荐热评部分列表详情-->
+			   <a href="article_article.html" target="_blank"><img src="./img/liebiao/liebiao1.jpg" alt=""></a>
+			   <p class="cartlistlbxqp1"><a href="article_article.html"  target="_blank">平安果1份（两种包装颜色随机发货）</a></p>
+			   <p class="cartlistlbxqp4"><span>￥19.00</span></p>
+			   <p class="cartlistlbxqp3"><span>￥9.00</span></p> 
+			   <div class="carttrolley">
+                  <a href="" title="加入购物车"><p>加入购物车</p></a>
+			   </div>
+			  </div>
+			 <div class="cartlistlbxq"><!--通用推荐热评部分列表详情-->
+			   <a href="article_article.html" target="_blank"><img src="./img/liebiao/liebiao1.jpg" alt=""></a>
+			   <p class="cartlistlbxqp1"><a href="article_article.html"  target="_blank">平安果1份（两种包装颜色随机发货）</a></p>
+			   <p class="cartlistlbxqp4"><span>￥19.00</span></p>
+			   <p class="cartlistlbxqp3"><span>￥9.00</span></p> 
+			   <div class="carttrolley">
+                  <a href="" title="加入购物车"><p>加入购物车</p></a>
+			   </div>
+			  </div>
+			 <div class="cartlistlbxq"><!--通用推荐热评部分列表详情-->
+			   <a href="article_article.html" target="_blank"><img src="./img/liebiao/liebiao1.jpg" alt=""></a>
+			   <p class="cartlistlbxqp1"><a href="article_article.html"  target="_blank">平安果1份（两种包装颜色随机发货）</a></p>
+			   <p class="cartlistlbxqp4"><span>￥19.00</span></p>
+			   <p class="cartlistlbxqp3"><span>￥9.00</span></p> 
+			   <div class="carttrolley">
+                  <a href="" title="加入购物车"><p>加入购物车</p></a>
+			   </div>
+			  </div>
+			 <div class="cartlistlbxq"><!--通用推荐热评部分列表详情-->
+			   <a href="article_article.html" target="_blank"><img src="./img/liebiao/liebiao1.jpg" alt=""></a>
+			   <p class="cartlistlbxqp1"><a href="article_article.html"  target="_blank">平安果1份（两种包装颜色随机发货）</a></p>
+			   <p class="cartlistlbxqp4"><span>￥19.00</span></p>
+			   <p class="cartlistlbxqp3"><span>￥9.00</span></p> 
+			   <div class="carttrolley">
+                  <a href="" title="加入购物车"><p>加入购物车</p></a>
+			   </div>
+			  </div>
+	  </div>
+  </div>
+<!--页面底部-->
+	   <div class="footer">
+	      <p>优果网 版权所有 Copyright @ 2007-2014 All rights reserved</p>
+		  <p>
+			  <a href=""><img src="./img/shouye/footer1.jpg" target="_blank"></a>
+			  <a href=""><img src="" target="_blank"></a>
+			  <a href=""><img src="./img/shouye/footer3.jpg" target="_blank"></a>
+			  <a href=""><img src="./img/shouye/footer4.jpg" target="_blank"></a>
+		  </p>
+		  <p>沪ICP备13005052号-2</p>
+		   <div class="footerxf footerxfl">
+		   </div>
+		   <div class="footerxf footerxfr">
+		   </div>
+     			  
+	   </div>
+       <div class="fanhuibtn fhbtn1">
+	     <a href="#"><p>回顶部</p></a>
+	   </div>
+       <div class="fanhuibtn fhbtn2">
+	     <a href="#"><p>微信</p></a>
+	   </div>
+       <div class="fanhuibtn fhbtn3">
+	     <a href="#"><p>代金券</p></a>
+	   </div>
+       <div class="fanhuibtn fhbtn4">
+	     <a href="#"><p>礼品券</p></a>
+	   </div>
+       <div class="fanhuibtn fhbtn5">
+	     <a href="#"><p>提货券</p></a>
+	   </div>
+       <div class="fanhuibtn fhbtn6">
+	     <a href="#"><p>客服</p></a>
+	   </div>
+	</div>   
+</body>
+</html>	 
