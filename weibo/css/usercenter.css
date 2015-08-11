@@ -1,0 +1,246 @@
+#sectionU{
+	padding-top:10px;
+	width:920px;
+	height:auto;
+	float:left;
+	margin-left:15%;
+}
+#headerUser{
+	width:100%;
+	background:url(../images/044.jpg) no-repeat left -30px top 0,
+	           white;
+	height:340px;           
+}
+#upheaderU{
+	float:left;
+	height:300px;
+	background:rgba(20,20,20,0.1);
+}
+#headerUser img{
+	float:left;
+	width:100px;
+	height:100px;
+	border-radius:53px;
+	border:solid 6px rgba(0,0,0,0);
+	margin:47px 405px 10px 405px;
+}
+#headerUser img:hover{
+	border:solid 6px rgba(255,115,80,0.2);
+}
+#userName{
+	font-size:20px;
+	width:100%;
+	float:left;
+	font-weight:bold;
+	text-align:center;
+	color:white;
+	margin-bottom:12px;
+}
+#userName span{
+  height:20px;
+  width:20px;
+  border-radius:10px;
+  float:left;
+}
+#female{
+  background:url(../images/icon.png) no-repeat left -95px top -48px;
+}
+#male{
+  background:url(../images/icon.png) no-repeat left -125px top -48px;
+}
+
+#userBrief{
+	width:100%;
+	text-align:center;
+	color:white;
+	margin-top:12px;
+}
+#headerUser {}
+#headerUser ul{
+	border-top:solid 1px #eee;
+	height:40px;
+	line-height:40px;
+	float:left;
+	width:920px;
+	background:white;
+	text-align:center;
+}
+#headerUser ul li{
+    height:14px;
+    line-height:14px;
+    font-size:14px;
+    text-align:center;
+    margin:0 60px;
+    padding:12px;
+    display:inline;
+}
+#headerUser ul li:hover{
+	border-bottom:solid 2px #eb7350;
+}
+#userBd{
+	width:920px;
+	float:left;
+	margin-top:15px;
+}
+#userBdLeft{
+	float:left;
+	width:300px;
+	margin-right:20px;
+}
+.bdLeftCon{
+	width:300px;
+	background:white;
+	float:left;
+	border-radius:3px;
+	margin-bottom:15px;
+}
+
+/*关注粉丝等*/
+#speInfoListU{
+	float:left;
+	width:280px;
+	margin:10px;
+}
+#speInfoListU>li{
+	display:block;
+	width:70px;
+	float:left;
+	margin:5px 5px 2px 15px;
+	border-right:solid 1px #999;
+}
+#speInfoListU>li:nth-child(3){
+	border-right:solid 1px white;
+}
+#speInfoListU2{}
+#speInfoListU2 a{
+	font-size:16px;
+	font-weight:normal;
+}
+#speInfoListU2 li span{
+	color:#888;
+}
+    /************申请认证**********/
+#userVeri{
+	height:30px;
+	line-height:30px;
+	padding:10px;
+}
+#userVeri span{
+	padding:0;
+}
+.userData{
+	height:30px;
+	line-height:30px;
+	padding:10px;
+}
+.userDataEd{
+	margin-top:5px;
+	width:100%;
+	border-top:solid 1px #ECECEC;
+	float:left;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+}
+/*文章*/
+.userArtHead{
+	float:left;
+	height:20px;
+	line-height:20px;
+	padding:2px 10px;
+	font-size:14px;
+	font-weight:bold;
+	width:280px;
+	border-bottom:solid 1px #DEDEDE;
+}
+.userArt{
+	margin:5px 5px 0px 5px;
+	background:#f2f2f5;
+	float:left;
+    height:90px;
+}
+.userArt img{
+	width:92px;
+	height:92px;
+	float:left;
+	border:0;
+}
+.userArt h3{
+	font-size:14px;
+	font-weight:bold;
+	height:20px;
+	line-height:20px;
+	float:left;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	width:180px;
+	margin-left:5px;
+}
+.userArt p{
+	float:left;
+	width:180px;
+	height:24px;
+	line-height:24px;
+	margin-left:5px;
+	height:72px;
+	overflow-y:hidden;
+	text-overflow:ellipsis;
+	white-space:pre-line;
+	word-wrap:break-word;
+}
+#userImgAlbum{
+	padding:5px 5px 0;
+	width:290px;
+}
+#userImgAlbum img{
+	float:left;
+}
+#userImgAlbum1{
+	height:185px;
+	width:190px;
+    margin:5px 5px 5px 0;
+}
+#userImgAlbum2{
+	height:90px;
+	width:95px;
+    margin:5px 0px 5px 0;
+}
+#userImgAlbum3{
+	height:90px;
+	width:95px;
+    margin:0 0 5px 0;
+}
+#userImgAlbum4{
+	height:95px;
+	width:90px;
+    margin:0 5px 0 0;
+}
+#userImgAlbum5{
+	height:95px;
+	width:95px;
+    margin:0 5px 0 0;
+}
+#userImgAlbum6{
+	height:95px;
+	width:95px;
+    margin:0;
+}
+
+/*右侧部分*/
+#userBdRight{
+	float:left;
+	width:600px;
+}
+.bdRightCon{
+	width:600px;
+	background:white;
+	float:left;
+	border-radius:3px;
+	margin-bottom:10px;
+}
+#userBdRHead{
+	float:left;
+	font-weight:bold;
+	margin:15px 25px 0 25px;
+}

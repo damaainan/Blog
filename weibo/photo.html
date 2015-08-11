@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="微博，好友关注">
+	<title>微相册页</title>
+	<link rel="stylesheet" href="./css/public.css" type="text/css">
+	<link rel="stylesheet" href="./css/index.css" type="text/css">
+	<link rel="stylesheet" href="./css/photo.css" type="text/css">
+	<script type="text/javascript" src="./js/jquery-1.8.3.min.js">
+	</script>
+
+</head>
+<body id="photo"> 
+	<div id="header">
+		<img src="./images/WB_logo.png" alt="logo">
+		<input type="text" id="search"  placeholder="大家正在搜：">
+		<ul>
+			<li><a href="" class="pubLink" id="headerIndex"><span>首页</span></a></li>
+			<li><a href="" class="pubLink" id="headerFind"><span>发现</span></a></li>
+			<li><a href="" class="pubLink" id="headerGame"><span>游戏</span></a></li>
+			<li><a href="" class="pubLink" id="headerName"><span>佳佳wk0Y</span></a></li>
+		</ul>
+		
+		<ol>
+			<li><a href="" class="pubLink"  id="headerMail"><img src="e.gif" alt=""></a></li>
+			<li><a href="" class="pubLink" id="headerSet"><img src="e.gif" alt=""></a></li>
+			<li><a href="" class="pubLink" id="headerNew"><img src="e.gif" alt=""></a></li>
+		</ol>
+	</div>
+	<div id="photoHeader">
+	  <div id="phHeadCon">
+		 <span id="photoLogo"></span>
+		 <ul>
+		 	<li>相册首页</li>
+		 	<li>我的相册</li>
+		 	<li>相册广场</li>
+		 	<li>上传</li>
+		 </ul>
+		 <input type="text" placeholder="搜索你感兴趣的标签">
+		 <span id="photoSearch"></span>
+		 <span id="photoSet"></span>
+		 <span id="photoHelp"></span>
+		 <span id="photoCall">反馈</span>
+	  </div>	 
+	</div>
+	<div id="photoBody">
+		<div id="phBdLeft">
+			<h2 id="phBdLefthead"><a href=""><span>用户名的专辑 </span></a><b> 〉</b><a href=""><span>专辑名 </span></a><b> 〉</b>当前照片</h2>
+			<div id="showBigMod">
+			    <img src="./images/module/10.jpg" >
+			</div>
+			<ul id="photoOperate">
+				<li id="photoBeau"><span></span>美化</li>
+				<li id="photoDelete"><span></span>删除</li>
+				<li id="photoMoreOp"><span>▼</span>更多操作</li>
+			</ul>
+			<p id="photoAlbumBrief">【黄鼠狼异想天开想猎杀苍鹭 反被其按在水里淹死】英国《每日邮报》2015年3月8日发布了一组摄影师乔纳森在英格兰肯特郡谢佩岛自然保护区拍摄的组图，照片上显示了一只黄鼠狼尝试攻击体形远大于它的苍鹭，一直捉着苍鹭的大嘴。苍鹭不断地试图甩开它，
+			    （分享自 <a href="">@来源用户名</a>）	
+				<a href="">专辑链接</a>
+				<a href="">查看微博</a>
+			</p>
+			<p id="photoSourceTime"><a href="">上传于5月21日</a> 来自 <a href="">手机新浪</a> 查看大图
+			</p>
+			<textarea id="photoComment"></textarea>
+			<p id="photoFace">笑脸 同时分享到微博<button>评论</button></p>
+		</div>
+		<div id="phBdRight">
+			<img src="./images/1(1).jpg" id="photoAlbumImg">
+			<p id="photoAlbumUName">用户名</p>
+			<p id="photoAlbumUOther">其他</p>
+			<ul id="photoAlbumLi">
+				<li><span>3</span>专辑</li>
+				<li><span>1</span>照片</li>
+				<li><span>3</span>赞过</li>
+			</ul>
+			<div id="photoAlbumShow">
+			    <h2>微博配图  <span>共9张</span></h2>
+			    <ul id="photoWall">
+			    	<li><img src="./images/module/1.jpg"></li>
+			    	<li class="photobick"><img src="./images/module/2.jpg"></li>
+			    	<li><img src="./images/module/3.jpg"></li>
+			    	<li><img src="./images/module/4.jpg"></li>
+			    	<li  class="photobick"></li>
+			    	<li></li>
+			    	<li></li>
+			    	<li class="photobrick"></li>
+			    	<li></li>
+			    </ul>
+			    <p id="changePhoto"><span id="prevPhotoAlbum"></span> <span id="nextPhotoAlbum"></span></p>
+			</div>
+
+			<img src="">
+			<img src="">
+			<img src="">
+			<img src="">
+		</div>
+	</div>	
+</body>
+</html>

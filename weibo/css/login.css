@@ -1,0 +1,318 @@
+#login{
+	padding-bottom:25px;
+	background:url(../images/login/bg_reg.png) repeat-x left 0 top 0,
+	              #BCDCF3;
+}
+#logReg{
+	width:900px;
+	float:left;
+	margin-left:16%;
+}
+.defaultImg1,.defaultImg2{
+	float:left;
+}
+.defaultImg1{
+	margin:10px 0;
+	padding-right:770px;
+}
+.defaultImg2{
+	border-bottom:solid 2px #F62638;
+}
+#lLog{
+	float:left;
+	width:568px;
+	background:white;
+	border-right:solid 2px #DDD;
+}
+#lLog h2{
+	font-style:italic;
+	font-size:24px;
+	font-weight:500;
+	padding:15px 20px;
+	background:#EEE;
+}
+#lLog button{
+	background:#EE5511;
+	font-family:"微软雅黑";
+	padding:6px 12px;
+	border:0;
+	color:white;
+	font-size:22px;
+	margin-left:40px;
+	border-radius:3px;
+}
+#lLogAd{
+	width:550px;
+	margin:15px 10px 20px 10px;
+}
+.loginForm{
+	width:240px;
+	float:left;
+	height:313px;
+	padding:35px 45px;
+	background:white;
+}
+.loginForm ul{
+	float:left;
+}
+.loginForm ul li{
+	float:left;
+}
+#logPwdLi,#logNameLi{
+    position:relative;
+}
+#logPwdLi span,#logNameLi span{
+	width:30px;
+	height:25px;
+	padding:3px 3px;
+	position:absolute;
+	left:1px;
+	top:6px;
+	z-index:2;
+	background:white;
+	border-radius:2px 0 0 2px;
+}
+#logNameLi span{
+	background:url(../images/login/form_login.png) no-repeat left -5px top 2px,
+	white;
+}
+#logPwdLi span{
+	background:url(../images/login/form_login.png) no-repeat left -5px top -49px,white;
+}
+.loginForm p{
+	float:left;
+	font-size:14px;
+	height:25px;
+	line-height:25px;
+}
+.loginForm p span{
+	margin:2px 5px;
+}
+#loginPwd,#loginName{
+	float:left;
+	height:25px;
+	width:194px;
+	padding:3px 5px 3px 36px;
+	margin:5px 0;
+	background:#FAFFBD;
+	border:solid 1px #AAA;
+	border-radius:2px;
+	position:relative;
+}
+.loginForm input:focus{
+	border:solid 1px #eb7350;
+}
+#checkBox{
+	margin:5px 0 8px 0;
+}
+input[type="checkbox"]{
+	margin:2px 3px 0 0 ;
+	float:left;
+}
+#loginName:after{}
+#loginPwd{}
+.loginForm button{
+	padding:5px 99px;
+	color:white;
+	font-size:16px;
+	font-weight:bold;
+	margin:5px 0;
+	background:#FFA415;
+	border:0;
+	border-radius:2px;
+}
+/*登录注册共用底部*/
+#logRegFoot{
+    width:900px;
+	float:left;
+	margin-left:16%;
+	background:white;
+	height:60px;
+	border-top:solid 1px #AAA;
+}
+
+
+
+
+
+
+
+/**********************************************************************************/
+
+
+         /*********************************注册页面*****************/
+#topline{
+	float:left;
+}
+#regLogo{
+	float:left;
+	width:200px;
+	padding:30px 350px 45px;
+    
+} 
+#regBody{
+	background:white;
+	width:100%;
+	float:left;
+	height:600px;
+	border-radius:6px;
+}
+#regBody>p{
+	height:40px;
+	line-height:40px;
+	float:left;
+	width:100%;
+	font-size:24px;
+	margin:12px 0;
+}
+#regBody>p span{
+	margin:0 30px;
+	height:40px;
+	line-height:40px;
+	padding-bottom:3px;
+}
+#regBody>p span:hover{
+    padding-bottom:0px;
+	border-bottom:solid 3px #eb7350;
+}
+#regBody ul{
+	margin-top:20px;
+}
+/*#regChoice{
+	float:left;
+	margin:20px 10px auto 60px;
+	font-size:14px;
+}
+#regChoice li{
+	float:right;
+	clear:right;
+	display:block;
+	font-size:14px;
+	color:#555;
+	height:60px;
+	padding-top:10px;
+}
+#regChoice li:before{
+	content:"*";
+	color:red;
+	float:left;
+	font-size:22px;
+	height:20px;
+	line-height:20px;
+	margin:3px 5px 0;
+}
+#regMethod{
+	float:left;
+	width:20px;
+	height:20px;
+	margin-top:10px;
+	margin-left:10px;
+	background:url(../images/login/reg_method_s.png) no-repeat left 0px top -25px;
+}  */  
+#regContent{
+	margin:20px 10px auto 10px;
+	font-size:12px;
+}
+#regChoice{
+	float:left;
+}   
+#regContent{
+	float:left;	
+}   
+#regTips{
+	float:left;
+}   
+#regContent input{
+	height:22px;
+	width:210px;
+	padding:3px 5px;
+	border:solid 1px #898989;
+	border-radius:2px;
+	margin:5px 0 15px;
+}  
+#regContent li{
+	height:70px;
+}  /*
+#veriCode input{
+	width:80px;
+	margin-left:20px;
+}
+#regConPhone{
+	position:relative;
+}
+#regConPhone a{
+	color:#0A8CD2;
+}
+#regConPhone input{
+	width:170px;
+	padding:3px 5px 3px 45px;
+}
+#regConPhone input:focus{
+	border-top:solid 1px #eb7350;
+	border-right:solid 1px #eb7350;
+	border-bottom:solid 1px #eb7350;
+}
+/*国家区号设置*/
+/*#countrySet{
+	position:absolute;
+	left:0;
+	top:5px;
+	width:43px;
+	height:28px;
+	background:#FFF;
+	border:solid 1px #898989;
+}
+#countrySet:hover{
+	background:#DDD;
+}
+
+
+
+
+#regConPwd input:focus{
+	border:solid 1px #eb7350;
+}*/
+
+#regContent button{
+	padding:8px 73px;
+	background:#FFA414;
+	font-size:16px;
+	font-weight:bold;
+	color:white;
+	border:solid 1px #898989;
+	border-radius:2px;
+	margin:15px 0;	
+}  
+#regTips li{
+	height:60px;
+	width:160px;
+	padding-top:10px;
+	color:red;
+}     
+#regHelp{
+	float:right;
+	width:193px;
+	border-left:solid 1px #E9E9E9;
+	padding:10px 20px 10px 0;
+    list-style:decimal;
+}
+#regHelp p,#regHelp h3{
+	font-size:14px;
+	float:left;
+	width:150px;
+	margin:5px 0 5px 10px;
+}
+#regHelp p{
+	padding-bottom:10px;
+	border-bottom:dotted 1px #CDCDCD;
+}
+#regHelp p a{
+	color:#5edafa;
+}
+#regHelp li{
+   float:left;
+   font-size:12px;
+   color:#0A8CD2;
+   line-height:25px;
+   margin-left:20px;
+}     

@@ -1,0 +1,722 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="微博，好友关注">
+	<title>微博首页</title>
+	<link rel="stylesheet" href="./css/public.css" type="text/css">
+	<link rel="stylesheet" href="./css/index.css" type="text/css">
+	<link rel="stylesheet" href="./css/article.css" type="text/css">
+	<script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+
+</head>
+<body id="index">
+   <!-- 公用头部 -->
+	<div id="header">
+		<img src="./images/WB_logo.png" alt="logo">
+		<input type="text" id="search"  placeholder="大家正在搜：">
+		<ul>
+			<li><a href="" class="pubLink" id="headerIndex"><span>首页</span></a></li>
+			<li><a href="" class="pubLink" id="headerFind"><span>发现</span></a></li>
+			<li><a href="" class="pubLink" id="headerGame"><span>游戏</span></a></li>
+			<li><a href="" class="pubLink" id="headerName"><span>佳佳wk0Y</span></a></li>
+		</ul>
+		
+		<ol>
+			<li><a href="" class="pubLink"  id="headerMail"><img src="e.gif" alt=""></a></li>
+			<li><a href="" class="pubLink" id="headerSet"><img src="e.gif" alt=""></a></li>
+			<li><a href="" class="pubLink" id="headerNew"><img src="e.gif" alt=""></a></li>
+		</ol>
+	</div>
+	             <!-- <ul id="floTopMail">
+                   <li>私信</li>
+                   <li>评论</li>
+                   <li>赞</li>
+                </ul> -->
+	<a  name="top"></a>
+	<div id="section">
+	<!-- 内容部分 -->
+	    <!-- 左侧侧边栏 -->
+	     
+	    <div id="lSection">
+	    	<ul id="lAside1">
+	    		<a href=""><li>首页<b></b></li></a>
+	    		<a href=""><li>消息<b></b></li></a>
+	    		<a href=""><li>收藏<b></b></li></a>
+	    	</ul>
+	    	<span>—————————<a href=""><img src="./js/svg/cog.svg" title="管理"></a>——</span>
+	    	<ul id="lAside2">
+	    		<a href=""><li>好友圈<b>1</b></li></a>
+	    		<a href=""><li>群微博<b>1</b></li></a>
+	    		<a href=""><li>特别关注<b>1</b></li></a>
+	    	</ul>
+	    	<ul id="lAside3">	
+	    		<a href=""><li>企业<b>1</b></li></a>
+	    		<a href=""><li>狗狗<b>1</b></li></a>
+	    		<a href=""><li>吐槽<b>1</b></li></a>
+	    		<a href=""><li>名人<b>1</b></li></a>
+	    		<a href=""><li>科技<b>1</b></li></a>
+	    		<a href=""><li>绘画<b>1</b></li></a>
+	    		<a href=""><li>投资<b>1</b></li></a>
+	    	</ul>
+	    </div>
+	    <!-- 左侧侧边栏滑动效果 -->
+    
+	    <!-- 中间主要内容部分 -->
+	    <div id="mSection">
+	    	<div class="contentBlock">
+	    	    <span id="font1">有什么新</span>
+	    	    <span id="font2">鲜</span>
+	    	    <span id="font3">事想告诉大家</span>
+	    	    <span id="font4">？</span>
+	    	    <a href="javascript:void(0)" class="speLink"><span id="font5">最新新闻</span></a>
+
+	    	    <textarea id="publish" cols="108" rows="4" value=""></textarea> 
+<!-- 顶部发布新微博js特效 -->
+
+	    	    <div id="pubContent">
+	    	    	<ul>
+	    	    		<a  class="pubLink"><li><img src="./js/svg/smileface.svg" alt="">表情</li></a>
+	    	    		<a  class="pubLink"><li><img src="./js/svg/image.svg" alt="">图片</li></a>
+	    	    		<a  class="pubLink"><li><img src="./js/svg/moviecamera.svg" alt="">视频</li></a>
+	    	    		<a  class="pubLink"><li><b>＃</b>话题</li></a>
+	    	    		<a class="pubLink"><li><img src="./js/svg/basic_sheet_txt.svg" alt="" style="height:20px">长微博</li></a>
+	    	    		<li id="elliChoice" title="查看更多"><b></b><b></b><b></b></li>
+	    	    	</ul>
+
+	    	    	<button id="pubBtn" type="submit">发布</button>
+	    	    	<a class="pubLink"><span id="visibility">公开∨</span></a>
+	    	    	<!-- 更多内容选择 -->
+	    	    	<div id="moreTopic">
+	    	    		<p><img src="./js/svg/star.svg" alt="">点评</p>
+	    	    		<p><img src="./js/svg/clock.svg" alt="">定时发</p>
+	    	    		<p><img src="./js/svg/MUSIC0.svg" alt="">音乐</p>
+	    	    		<p><img src="./js/svg/ecommerce_graph2.svg" alt="">投票</p>
+	    	    		<!-- <p><img src="./js/svg/.svg" alt="">微公益</p>
+	    	    		<p><img src="./js/svg/.svg" alt="">发文件</p> -->
+	    	    	</div>
+                    <!-- 具体操作 -->
+	    	    	<div id="speOperate">
+	    	    		<p>上传图片</p>  
+	    	    		<p>上传视频</p>
+	    	    		<p>上传音乐</p>
+	    	    	</div>
+	    	    </div>
+	    	    <!-- 更多选项下拉列表 和  具体操作模块的调用 -->
+
+	    	    
+	    	</div>
+	    	<!-- 搜索内容模块 -->
+	    	<div class="contentBlock">
+	    		<ul id="sContent">
+	    			<a href="" class="pubLink"><li>全部</li></a>
+	    			<a href="" class="pubLink"><li>原创</li></a>
+	    			<a href="" class="pubLink"><li>图片</li></a>
+	    			<a href="" class="pubLink"><li>音乐</li></a>
+	    			<a href="" class="pubLink"><li>视频</li></a>
+	    			<div class="triangle">
+	    				▲
+	    			</div>
+	    		</ul>
+	    		<div id="conSearchFra">
+	    		    <!-- 搜索框部分 -->
+	    		    <input type="search" id="conSearch" placeholder="搜索我关注的人和微博">
+	    		    <!-- 搜索按钮 下拉按钮 -->
+	    		    <div id="moreSearchBtn">
+	    		    	<p><span>F</span><b>▼</b></p>
+	    		    </div>
+	    		</div>
+	    		<div id="newMess">
+	    		    <a href="javascript:void(0)" class="speLink">有7条新微博，点击查看</a>
+	    		</div>
+	    	</div>
+	    	<!-- 高级搜索 -->
+	    	<div class="contentBlock" style="display:none">
+	    	    <div id="moreSearch">
+	    	    	<h2>高级搜索<span>×</span></h2>
+	    	    	<form action="" method="get">
+	    	    		<p id="advanced1"><span>类　型：</span><input type="checkbox" name="kind" value="">原创
+	    	    		      <input type="checkbox" name="kind" value="">转发
+	    	    		      <input type="checkbox" name="kind" value="">纯文字
+	    	    		      <input type="checkbox" name="kind" value="">含图片
+	    	    		      <input type="checkbox" name="kind" value="">含视频
+	    	    		      <input type="checkbox" name="kind" value="">含音乐</p>
+	    	    		<p><span>关键字：</span><input type="text"  id="advanced2" name="character" placeholder="搜索我关注的人和微博"></p>
+	    	    		<p><span>时　间：</span><input type="date" class="advanced3"> 到 <input type="date" class="advanced3"></p>
+	    	    		<p><span><img src="./images/e.gif" alt=""></span><input type="submit" id="advanced4" value="搜索"></p>
+	    	    	</form>
+	    	    </div>
+	    		<div id="newMess">
+	    		    <a href="" class="speLink">有7条新微博，点击查看</a>
+	    		</div>
+	    	</div>
+	    		    	<!-- 显示高级搜索部分   js代码 -->	    	
+	    	<!-- 具体内容模块 -->
+	    	<div class="contentBlock">
+	    		<div class="upContent">
+	    			<div class="cPicture">
+	    				<img src="./images/1.jpg" class="cPhoto" title="中科大胡不归">
+	    				<!-- <button class="imgFocus"><b>＋</b>关注</button> -->
+                            <!-- 悬浮简介 -->
+	    				    <div class="replaced1">
+	    		
+	    	                </div>
+	    			</div>
+	    			<div class="specific">
+	    				<p class="conName"><a href="" class="pubLink" title="中科大胡不归"><b>中科大胡不归</b></a>
+	    				    <a href="" class="perConf" title="微博个人认证"><img src="./images/e.gif" alt=""></a>
+	    				    <a href="" class="wbMem" title="微博会员"><img src="./images/e.gif"  alt=""></a>
+	    				    <a href="javascript:void(0)"><span>∨</span></a>
+	    				    <!-- 悬浮简介 -->
+	    				    <div class="replaced2">
+	    		
+	    	                </div>
+	    				</p>
+	    				<p class="conContent">
+	    				   呵呵呵，看来毛泽东的“坐地日行八万里”同样令很多人困惑啊<br/><a href="" class="speLink">网页链接</a>
+	    				</p>
+	    				<div class="otherCon">
+	    					<p class="otherConName"><a href="" class="pubLink">中科大胡不归</a>
+	    				       <span></span>
+	    				       <span></span>
+	    				    </p>
+	    				    <p class="otherConContent">
+	    				       【习近平答印尼总统“为何中国发展快”】《从贫民窟到总统府——印尼传奇总统佐科》在京发布。O网页链接佐问中国为何发展这么快，习答要有宏大的规划，规划好就要尽快建基础设施。佐问缺资金怎么办，习答要寻找投资者。佐请中国多帮忙，习说要推动中国企业在印尼投资。卖拐即视感……
+	    				    </p>
+	    				    <div class="conImages">
+	    				        <img src="./images/lizi6.jpg" alt="" class="conImage">
+	    				    </div>
+	    				     
+	    				    <p class="otherSource">
+		    				    <a href="" class="pubLink"><span class="conTime">20分钟前</span></a> 来自 
+		    				    <a href="" class="pubLink"><span class="conPhone">iPhone6Plus</span></a>
+	    				    </p>
+                        </div>
+	    				<p class="source">
+		    				<a href="" class="pubLink"><span class="conTime">20分钟前</span></a> 来自 
+		    				<a href="" class="pubLink"><span class="conPhone">iPhone6Plus</span></a>
+	    				</p>
+
+	    			</div>
+	    		</div>
+	    		<div class="downContent">
+	    			<ul class="operateCon">
+	    				<a href="" class="pubLink"><li>收藏 10</li></a>
+	    				<a href="" class="pubLink"><li>评论 10</li></a>
+	    				<a href="" class="pubLink"><li>转发 10</li></a>
+	    				<a href="" class="pubLink"><li><img src="./images/feed.gif">24</li></a>
+	    			</ul>
+	    		</div>
+	    	</div>
+
+  	<!-- 设置分组js特效 -->
+	    	
+
+
+
+         <div class="contentBlock">
+	    		<div class="upContent">
+	    			<div class="cPicture">
+	    				<img src="./images/1.jpg" class="cPhoto" alt="头像">
+	    			</div>
+	    			<div class="specific">
+	    				<p class="conName"><a href="" class="pubLink">中科大胡不归</a>
+	    				    <span></span>
+	    				    <span></span>
+	    				    <a href="javascript:void(0)"><span>∨</span></a>
+	    				</p>
+	    				<p class="conContent">
+	    				   呵呵呵，看来毛泽东的“坐地日行八万里”同样令很多人困惑啊
+	    				</p>
+	    				<div class="conImages">
+	    					<img src="./images/lizi1.jpg" class="conImage" alt="">
+	    					<img src="./images/lizi2.jpg" class="conImage" alt="">
+	    				</div>
+	    				<p class="source">
+		    				<a href="" class="pubLink"><span class="conTime">20分钟前</span></a> 来自 
+		    				<a href="" class="pubLink"><span class="conPhone">iPhone6Plus</span></a>
+	    				</p>
+
+	    			</div>
+	    		</div>
+	    		<div class="downContent">
+	    			<ul class="operateCon">
+	    				<a href="" class="pubLink"><li>收藏 10</li></a>
+	    				<a href="" class="pubLink"><li>评论 10</li></a>
+	    				<a href="" class="pubLink"><li>转发 10</li></a>
+	    				<a href="" class="pubLink"><li><img src="./images/feed.gif">24</li></a>
+	    			</ul>
+	    		</div>	    		
+	    </div>
+<!-- 视频类型 -->
+         <div class="contentBlock">
+	    		<div class="upContent">
+	    			<div class="cPicture">
+	    				<img src="./images/1.jpg" class="cPhoto" alt="头像">
+	    			</div>
+	    			<div class="specific">
+	    				<p class="conName"><a href="" class="pubLink">中科大胡不归</a>
+	    				    <span></span>
+	    				    <span></span>
+	    				    <a href="javascript:void(0)"><span>∨</span></a>
+	    				</p>
+	    				<p class="conContent">
+	    				   分享视频
+	    				</p>
+
+
+	    				<!-- 视频文件 -->
+	    				<div class="videos">
+	    					<span class="videocon"></span>
+	    					<video src="./images/1.mp4" style="display:none"></video>
+	    				</div>
+
+	    				<p class="source">
+		    				<a href="" class="pubLink"><span class="conTime">20分钟前</span></a> 来自 
+		    				<a href="" class="pubLink"><span class="conPhone">iPhone6Plus</span></a>
+	    				</p>
+
+	    			</div>
+	    		</div>
+	    		<div class="downContent">
+	    			<ul class="operateCon">
+	    				<a href="" class="pubLink"><li>收藏 10</li></a>
+	    				<a href="" class="pubLink"><li>评论 10</li></a>
+	    				<a href="" class="pubLink"><li>转发 10</li></a>
+	    				<a href="" class="pubLink"><li><img src="./images/feed.gif">24</li></a>
+	    			</ul>
+	    		</div>	    		
+	        </div>
+<!-- 音乐类型 -->
+         <div class="contentBlock">
+	    		<div class="upContent">
+	    			<div class="cPicture">
+	    				<img src="./images/1.jpg" class="cPhoto" alt="头像">
+	    			</div>
+	    			<div class="specific">
+	    				<p class="conName"><a href="" class="pubLink">中科大胡不归</a>
+	    				    <span></span>
+	    				    <span></span>
+	    				    <a href="javascript:void(0)"><span>∨</span></a>
+	    				</p>
+	    				<p class="conContent">
+	    				   分享音乐
+	    				</p>
+
+
+	    				<!-- 视频文件 -->
+	    				<div class="musics">
+	    					<span class="musiccon"></span>
+	    					<audio src="./images/1.mp3" style="display:none"></audio>
+	    				</div>
+
+	    				<p class="source">
+		    				<a href="" class="pubLink"><span class="conTime">20分钟前</span></a> 来自 
+		    				<a href="" class="pubLink"><span class="conPhone">iPhone6Plus</span></a>
+	    				</p>
+
+	    			</div>
+	    		</div>
+	    		<div class="downContent">
+	    			<ul class="operateCon">
+	    				<a href="" class="pubLink"><li>收藏 10</li></a>
+	    				<a href="" class="pubLink"><li>评论 10</li></a>
+	    				<a href="" class="pubLink"><li>转发 10</li></a>
+	    				<a href="" class="pubLink"><li><img src="./images/feed.gif">24</li></a>
+	    			</ul>
+	    		</div>	    		
+	        </div>
+
+
+	    	<div class="contentBlock">
+	    		<div class="upContent">
+	    			<div class="cPicture">
+	    				<img src="./images/1.jpg" class="cPhoto" alt="头像">
+	    			</div>
+	    			<div class="specific">
+	    				<p class="conName"><a href="" class="pubLink">中科大胡不归</a>
+	    				    <span></span>
+	    				    <span></span>
+	    				    <a href="javascript:void(0)" class="pubLink"><span>∨</span></a>
+	    				</p>
+	    				<p class="conContent">
+	    				   呵呵呵，看来毛泽东的“坐地日行八万里”同样令很多人困惑啊
+	    				</p>
+	    				<!-- 转发内容包含 文字 和 多张图片 -->
+	    				<div class="otherCon">
+	    					<p class="otherConName"><a href="" class="pubLink">中科大胡不归</a>
+	    				       <span></span>
+	    				       <span></span>
+	    				    </p>
+	    				    <p class="otherConContent">
+	    				       【习近平答印尼总统“为何中国发展快”】《从贫民
+	    				    </p>
+	    				    <div class="conImages">
+		    					<img src="./images/lizi1.jpg" class="conImage" alt="">
+		    					<img src="./images/lizi2.jpg" class="conImage" alt="">
+		    					<img src="./images/lizi3.jpg" class="conImage" alt="">
+		    					<img src="./images/lizi4.jpg" class="conImage" alt="">
+		    					<img src="./images/lizi5.jpg" class="conImage" alt="">
+		    					<img src="./images/lizi6.jpg" class="conImage" alt="">
+		    					<img src="./images/lizi7.png" class="conImage" alt="">
+		    					<img src="./images/lizi8.jpg" class="conImage" alt="">
+	    					
+	    				    </div>
+
+	    				    <p class="otherSource">
+		    				    <a href="" class="pubLink"><span class="conTime">200分钟前</span></a> 来自 
+		    				    <a href="" class="pubLink"><span class="conPhone">iPhone6Plus</span></a>
+	    				    </p>
+
+	    				
+	    				</div>
+
+	    				<p class="source">
+		    				<a href="" class="pubLink"><span class="conTime">20分钟前</span></a> 来自 
+		    				<a href="" class="pubLink"><span class="conPhone">iPhone6Plus</span></a>
+	    				</p>
+
+	    			</div>
+	    		</div>
+	    		<div class="downContent">
+	    			<ul class="operateCon">
+	    				<a href="" class="pubLink"><li>收藏 10</li></a>
+	    				<a href="" class="pubLink"><li>评论 10</li></a>
+	    				<a href="" class="pubLink"><li>转发 10</li></a>
+	    				<a href="" class="pubLink"><li><img src="./images/feed.gif">24</li></a>
+	    			</ul>
+	    		</div>
+	    	</div>	    	
+	    	<div class="contentBlock">
+	    		内容
+	    	</div>
+	    	<div class="contentBlock">
+	    		内容
+	    	</div>
+
+
+	    	<div class="contentBlock">
+	    	   <div id="pageMod">
+	    	   	  <p id="pageNum">第1页<span>∨</span></p>
+	    	   	  <p id="pageNext">下一页</p>
+	    	   	  <div id="pageFlo">
+	    	   	  	<ul>
+	    	   	  		<li>第10页</li>
+	    	   	  		<li>第9页</li>
+	    	   	  		<li>第8页</li>
+	    	   	  		<li>第7页</li>
+	    	   	  		<li>第6页</li>
+	    	   	  		<li>第5页</li>
+	    	   	  		<li>第4页</li>
+	    	   	  		<li>第3页</li>
+	    	   	  		<li>第2页</li>
+	    	   	  		<li>第1页</li>
+	    	   	  	</ul>
+	    	   	  </div>
+	    	   </div>	    		
+	    	</div>
+	    	<!--模块结束  -->
+	    </div>
+
+<!-- ++++++++++++++++++++***********js  特效模块  ****************+++++++++++++++++++++++++++ -->
+<!-- 分页部分特效  暂时留在这里  未写完-->
+<script type="text/javascript">
+	$("#pageNum").mouseover(function(){
+		$("#pageFlo").css("display","block");
+	});
+	$("#pageFlo").mouseover(function(){
+		$("#pageFlo").css("display","block");
+	});
+	$("#pageNum").mouseout(function(e){
+		$("#pageFlo").css("display","none");
+		e.stopPropagation();
+	});	
+	$("#pageFlo").mouseout(function(){
+		$("#pageFlo").css("display","block");
+	});
+</script>
+	<!-- ******************点击图片  查看图片 **********************************-->
+	    				
+		<div class="zoomImg">
+				<p class="clickImgOp"><a class="putup">收起</a><a>查看大图</a><a>向左旋转</a><a>向右旋转</a>
+			    </p> 
+             	<img src="" alt="" class="clickImg">
+		</div> 
+		<!-- **********展示多张图片 的 特效********** -->
+		<div class="showClickImg">
+	        <span class="showPre"><</span>
+	    	
+	    	<span class="showNex">></span>
+	    </div>
+<!--*************************** 悬浮简介************************** -->
+	    	<div id="floatBrief">
+	    		<div id="upFloBri">
+	    			<img src="./images/1.jpg" alt="">
+	    			<h3>中科大胡不归</h3>
+	    			<p>简介：中国科学技术大学副研究员 微博自微博自微博自媒体联盟成员</p>
+	    		</div>
+	    		<div id="downFloBri">
+	    			<ul>
+	    				<li>关注100</li>
+	    				<li>粉丝100</li>
+	    				<li>微博100</li>
+	    			</ul>
+	    			<p>北京 朝阳区</p>	
+	    			<!-- <button>已关注</button><button> 私信 </button><button>≡</button> -->
+	    			
+	    			<div id="jsGroup">
+		    				<button id="haveAtten"><span>√</span>已关注<span>▼</span></button>
+		    				<button> 私信 </button><button>≡</button> 
+		    				<div id="simset">
+			    					<p>取消关注</p>
+			    					<p id="againSetGroup">设置分组</p>
+			    			</div>
+			    	</div>
+	    		</div>
+	    	</div>	
+		<!-- 添加分组模块 -->
+		<div id="groupAtten">
+	    	<div id="groupBlock">
+			   <h2>设置分组 <span>×</span></h2>
+			   <h3>为《此人》选择分组</h3>
+			   <div id="groupAll">
+			   	  <ul>
+			   	  	<li><input type="checkbox">特别关注</li>
+			   	  	<li><input type="checkbox">企业</li>
+			   	  	<li><input type="checkbox">狗狗</li>
+			   	  	<li><input type="checkbox">吐槽</li>
+			   	  	<li><input type="checkbox">绘画</li>
+			   	  	<li><input type="checkbox">投资</li>
+			   	  	<li><input type="checkbox">经济</li>
+			   	  	<li><input type="checkbox">旅游</li>
+			   	  	<li><input type="checkbox">美女</li>
+			   	  	<li><input type="checkbox">美女</li>
+			   	  	<li><input type="checkbox">美女</li>
+			   	  	<li><input type="checkbox">美女</li>
+			   	  	<li><input type="checkbox">美女</li>
+			   	  	<li><input type="checkbox">美女</li>
+			   	  	<li><input type="checkbox">美女</li>
+			   	  </ul>
+			   	  <p id="addGroupBtn"><span>+</span>创建新分组</p>
+			   </div>
+			   <div id="groupBot">
+			   	  <p id="groupbtn1">保存</p>
+			   	  <p id="groupbtn2">取消</p>
+			   </div>
+			</div>			
+	    </div>		    	
+ <!-- 鼠标悬停头像  姓名 出现简介信息框的特效 -->
+ <!-- js设置值   需要有数据  模版中有隐藏的数据 -->
+<!-- 单张图片 点击放大查看    js特效   -->
+	<!-- 视频播放器特效 -->
+	    				<div class="player">
+	    				    <p class="videoPutup">收起</p>
+	    					<video src="" class="playerVideo" controls="controls"></video>
+	    				</div>
+		    			<div class="playerm">
+	    				    <p class="musicPutup">收起</p>
+	    					<audio src="" class="playerMusic" controls="controls"></audio>
+	    				</div>
+    				
+<!-- ++++++++++++++++++++***********js  特效模块结束  ****************++++++++++++++ -->
+<!-- **************右侧侧边栏********************** -->
+         <!-- 个人等级等详细信息 -->
+	    <div id="rSection">
+	    	<div class="rContentBlock" id="speInfo">
+	    	    <img src="./images/feed.gif"  id="changeModule" title="模版设置">
+	    		<img src="./images/1(1).jpg" id="speInfoImg" title="佳佳wk0Y">
+	    		<p><a href="" class="pubLink">佳佳wk0Y</a><span id="speInfoLevel" title="微博等级11 升级有礼">Lv.11</span></p>
+	    		<ul id="speInfoList">
+	    			<li>
+	    				<ul id="speInfoList2">
+	    					<a href="" class="pubLink"><li>165</li></a>
+	    					<li><span>关注</span></li>
+	    				</ul>
+	    			</li>
+	    			<li>
+	    				<ul id="speInfoList2">
+	    					<a href="" class="pubLink"><li>49</li></a>
+	    					<li><span>粉丝</span></li>
+	    				</ul>
+	    			</li>
+	    			<li>
+	    				<ul id="speInfoList2">
+	    					<a href="" class="pubLink"><li>147</li></a>
+	    					<li><span>微博</span></li>
+	    				</ul>
+	    			</li>
+	    		</ul>
+	    	</div>
+	    	<!-- 模版设置   js 特效   -->
+	    	<div id="moduleSet">
+	    		<div id="modSetHead">
+	    			<ul>
+	    				<li>套装</li>
+	    				<li>模版</li>
+	    				<li>封面图</li>
+	    				<li>自定义</li>
+	    			</ul>
+	    			<b>×</b>
+	    		</div>
+	    		<div id="modSetBd">
+	    		   <p>推荐 七天换装  经典</p>
+	    		   <div id="modImgSto">
+	    			<img src="./images/module/1.jpg">
+	    			<img src="./images/module/2.jpg">
+	    			<img src="./images/module/3.jpg">
+	    			<img src="./images/module/4.jpg">
+	    			<img src="./images/module/5.jpg">
+	    			<img src="./images/module/6.jpg">
+	    			<img src="./images/module/7.jpg">
+	    			<img src="./images/module/8.jpg">
+	    			<img src="./images/module/9.jpg">
+	    			<img src="./images/module/10.jpg">
+	    			<img src="./images/module/11.jpg">
+	    			<img src="./images/module/12.jpg">
+	    			<img src="./images/module/13.jpg">
+	    			<img src="./images/module/14.jpg">
+                   </div>    
+	    		</div>
+	    	</div>
+	    	<!-- 换模版   js  特效 -->
+
+                 <!-- 可能感兴趣的人   系统推荐 -->
+	    	<div class="rContentBlock">
+	    		<div class="rConBlockUp">
+	    		    <p><a href="" class="pubLink">可能感兴趣的人</a><a href="" class="pubLink"><span>换一批</span></a></p>
+	    		</div>
+	    		<div class="rConBlockCen">
+	    			<div class="recFavour">
+	    				<a href=""><img src="./images/10.jpg" alt=""></a>
+	    				<a href="" class="pubLink">
+	    					<p class="recFavour1">网易汪源</p>
+	    				</a>
+	    				<a href=""><button ><span>＋</span>关注</button></a>
+	    				<p class="recFavour2">关注<a href="" class="speLink">阿里正祥</a>的人还关注</p>
+	    			</div>
+	    			<div class="recFavour">
+	    				<a href=""><img src="./images/10.jpg" alt=""></a>
+	    				<a href="" class="pubLink">
+	    					<p class="recFavour1">网易汪源</p>
+	    				</a>
+	    				<a href=""><button><span>＋</span>关注</button></a>
+	    				<p class="recFavour2">关注<a href="" class="speLink">阿里正祥</a>的人还关注</p>
+	    			</div>
+	    			
+	    		</div>
+	    		<div class="rConBlockDown">
+	    			<p><a href="" class="pubLink">查看更多&gt</a></p>
+	    		</div>
+	    	</div>	
+	    	    	<!-- 热门话题 -->
+	    	<div class="rContentBlock">
+	    		<div class="rConBlockUp">
+	    		    <p><a href="" class="pubLink">热门话题</a><a href="" class="pubLink"><span>换一批</span></a></p>
+	    		</div>
+	    		<div class="rConBlockCen">
+	    		    <ul class="rConBlockLi">
+	    		        <li><a href="" class="pubLink">#VIBEUI2.5#</a><span></span></li>
+	    		        <li><a href="" class="pubLink">#德国客机法国坠毁#</a><span>1.3亿</span></li>
+	    		        <li><a href="" class="pubLink">#我是歌手#</a><span>139.3亿</span></li>
+	    		        <li><a href="" class="pubLink">#快乐就啪啪啪#</a><span>765万</span></li>
+	    		        <li><a href="" class="pubLink">#万茜美腿蛮腰#</a><span>1115万</span></li>
+	    		        <li><a href="" class="pubLink">#40吨黑心海带#</a><span>15万</span></li>
+	    		        <li><a href="" class="pubLink">#相亲被要求脱衣秀身材#</a><span>23万</span></li>
+	    		    </ul>
+	    		</div>
+	    		<div class="rConBlockDown">
+	    			<p><a href="" class="pubLink">查看更多</a></p>
+	    		</div>
+	    	</div>
+	    	<!-- 电影热评榜 -->
+	    	<div class="rContentBlock">
+	    		<div class="rConBlockUp">
+	    		    <p><a href="" class="pubLink">电影热评榜</a></p>
+	    		</div>
+	    		<div class="rConBlockCen">
+	    		    <ul class="rConBlockLi">
+	    		        <li><a href="" class="pubLink">失孤</a><span>8.2分</span></li>
+	    		        <li><a href="" class="pubLink">咱们结婚吧电影版</a><span>8.2分</span></li>
+	    		        <li><a href="" class="pubLink">灰姑娘</a><span>8.2分</span></li>
+	    		        <li><a href="" class="pubLink">奔跑吧！兄弟</a><span>8.2分</span></li>
+	    		        <li><a href="" class="pubLink">有一个地方只有我们知道</a><span>8.2分</span></li>
+	    		    </ul>
+	    		</div>
+	    		<div class="rConBlockDown">
+	    			<p><a href="" class="pubLink">查看更多</a></p>
+	    		</div>
+	    	</div>
+	    	<div class="rContentBlock">
+	    		右侧侧边栏
+	    	</div>
+	    	<div class="rContentBlock">
+	    		右侧侧边栏
+	    	</div>
+
+	    </div>
+
+	</div>    
+	<!-- ************************公用底部********************* -->
+	<div id="footer">
+	    <div id="upFoot">
+	    	<ul>
+	    		<h2>微博精彩</h2>
+	    		<a href="" class="pubLink"><li>热门微博</li></a>
+	    		<a href="" class="pubLink"><li>热门话题</li></a>
+	    		<a href="" class="pubLink"><li>名人堂</li></a>
+	    		<a href="" class="pubLink"><li>微博会员</li></a>
+	    		<a href="" class="pubLink"><li>微相册</li></a>
+	    		<a href="" class="pubLink"><li>微游戏</li></a>
+	    		<a href="" class="pubLink"><li>微指数</li></a>
+	    	</ul>
+	    	<ul>
+	    		<h2>手机玩微博</h2>
+	    		<a href="" class="pubLink"><li>WAP版</li></a>
+	    		<a href="" class="pubLink"><li>短彩信发微博</li></a>
+	    		<a href="" class="pubLink"><li>iPhone客户端</li></a>
+	    		<a href="" class="pubLink"><li>ipad客户端</li></a>
+	    		<a href="" class="pubLink"><li>Android客户端</li></a>
+	    	</ul>
+	    	<ul>
+	    		<h2>认证&合作</h2>
+	    		<a href="" class="pubLink"><li>申请认证</li></a>
+	    		<a href="" class="pubLink"><li>开放平台</li></a>
+	    		<a href="" class="pubLink"><li>企业微博</li></a>
+	    		<a href="" class="pubLink"><li>链接网站</li></a>
+	    		<a href="" class="pubLink"><li>微博标识</li></a>
+	    		<a href="" class="pubLink"><li>广告服务</li></a>
+	    		<a href="" class="pubLink"><li>微博商学院</li></a>
+	    	</ul>
+
+	    	<ul>
+	    		<h2>微博帮助</h2>
+	    		<a href="" class="pubLink"><li>常见问题</li></a>
+	    		<a href="" class="pubLink"><li>自助服务</li></a>
+	    	</ul>
+	    </div>
+	    <div id="downFoot">
+	    	<a href="" class="pubLink"><p>微博客服</p></a>
+	    	<a href="" class="pubLink"><p>意见反馈</p></a>
+	    	<a href="" class="pubLink"><p>开放平台</p></a>
+	    	<a href="" class="pubLink"><p>微博招聘</p></a>
+	    	<a href="" class="pubLink"><p>新浪网导航</p></a>
+	    	<a href="" class="pubLink"><p>举报处理大厅</p></a>
+	    	<a href="" class="pubLink"><p>京ICP证100780号</p></a>
+
+	    </div>
+	</div>
+		<!-- 返回按钮 -->
+        <div id="returnTopBtn">
+
+    		<a href="#top" ><img src="./js/svg/uparrow.svg" alt=""></a>
+    	</div>
+	    <!-- 私信框 -->
+	    <div id="privateMail">
+	    	<p><span><img src="./images/feed.gif" alt=""></span>私信聊天</p>
+
+	    	
+	    </div>
+</body>
+
+</html>

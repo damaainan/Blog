@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="微博，好友关注">
+	<title>微博注册页</title>
+	<link rel="stylesheet" href="./css/public.css" type="text/css">
+	<link rel="stylesheet" href="./css/login.css" type="text/css">
+	<link rel="stylesheet" href="./css/mail.css" type="text/css">
+	<script type="text/javascript" src="./js/jquery-1.8.3.min.js">
+	</script>
+
+</head>
+<body id="login">
+	 <img src="./images/login/top_line_bg.png" id="topline">
+	 <div id="logReg">
+	     <img src="./images/login/logo_big.png" id="regLogo">
+	     <div id="regBody">
+	     	<p><span>个人注册</span><img src="./images/feed.gif"><span>官方注册</span></p>
+	     	<ul id="regChoice">
+	     		<span id="regMethod"></span><li>邮箱：</li>
+	     		<li>设置密码：</li>
+	     		<li>验证码：</li>
+	     	</ul>
+
+	     	<ul id="regContent">
+	     		<form>
+	     			<li id="regConPhone"><input type="text" placeholder="请输入您的邮箱"><br/>
+                         <p>没有邮箱？<a href="./regiester.html"><span>用手机注册</span></a></p>
+                         
+	     			</li>
+	     			<li id="regConPwd"><input type="password"></li>
+	     			<li id="veriCode"><input type="text">框架验证码</li>
+	     			<li><button>立即注册</button></li>
+	     		</form>
+	     	</ul>
+
+
+
+	     	<ul id="regTips">
+	     		<li id="regTipPho">请输入正确的邮箱地址</li>
+	     		<li id="regTipPwd">请输入密码</li>
+	     		<li id="regTipVer">请输入验证码</li>
+	     	</ul>
+<!-- js提示特效 -->
+            <script type="text/javascript">
+              $("#regConPhone input").focus(function(){
+              	$("#regTipPho").html("您填写的邮箱将作为登录名");
+              	$("#regTipPho").css("color","gray");
+              });
+              $("#regConPhone input").focusout(function(){
+              	$("#regTipPho").html("请输入正确的邮箱地址");
+              	$("#regTipPho").css("color","red");
+              });
+
+              $("#regConPwd input").focus(function(){
+              	$("#regTipPwd").html("请输入6-16为数字、字母或常用字符，字母区分大小写");
+              	$("#regTipPwd").css("color","gray");
+              });
+              $("#regConPwd input").focusout(function(){
+              	$("#regTipPwd").html("请输入密码");
+              	$("#regTipPwd").css("color","red");
+              });
+              
+
+              $("#veriCode input").focus(function(){
+              	$("#regTipVer").css("color","gray");
+              });
+              $("#veriCode input").focusout(function(){
+              	$("#regTipVer").css("color","red");
+              });
+              
+            </script>
+
+
+
+	     	<ul id="regHelp">
+	     		<p>已有帐号， <a href="">直接登录»</a></p>
+	     		<h3>微博注册帮助</h3>
+	     		<li>微博注册操作指南</li>
+	     		<li>手机注册时提示手机号码已被绑定怎么办?</li>
+	     		<li>注册微博时昵称显示“已经被注册”如何处理?</li>
+	     		<li>注册时提示"你所使用的IP地址异常",该怎么办?</li>
+	     		<li>更多帮助»</li>
+	     	</ul>
+	     </div>
+
+	 </div>    
+</body>
+</html>

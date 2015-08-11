@@ -1,0 +1,31 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	background:url(../images/game/1.jpg) no-repeat left 0 top 51px;
+	width:100%;
+	float:left;
+	text-align:center;
+}
+#header{ 
+	float:left;
+	width:100%;
+	height:54px;
+	background:url(../images/game/top_nav_sprite.png) repeat-x left 0 top 0px;
+	/*border-bottom:solid 3px #eb7350;*/
+}
+#huandeng{
+	width:1000px;
+	/*26%的宽度*/
+	float:left;
+	height:330px;
+	margin-left:10%;
+	
+}
+#gameInfo{
+	float:left;
+	width:170px;
+	height:330px;
+	background:url(../images/game/3_01.png) no-repeat 0 0;
+}

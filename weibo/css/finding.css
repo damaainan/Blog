@@ -1,0 +1,74 @@
+#finding{
+	padding-top:52px;
+	background:url(../images/body_bg_page.jpg) repeat-x 0 0,
+	            #D4D5E0;
+}
+
+#findLogo{
+	background:url(../images/finding/logo.png) no-repeat 0 0;
+	float:left;
+	height:50px;
+	width:70%;
+	margin-left:10%;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+#findHeader{
+	float:left;
+	padding-left:15px;
+}
+#findHeader span{
+	float:left;
+    padding:12px 5px;
+    font-size:14px;
+}
+#findHeader span:hover{
+	border-bottom:solid 2px #eb7350;
+	padding-bottom:10px;
+}
+#manageLaw{
+	float:left;
+	width:540px;
+	margin:10px 25px 0px;
+}
+#manageLaw b{
+	color:black;
+	float:right;
+}
+#manageLaw b:hover{
+	color:#eb7350;
+	cursor:pointer;
+}
+#findTimeKind{
+	width:500px;
+	float:left;
+   margin-left:20px;
+}
+#findTimeKind li{
+	float:left;
+	margin-left:60px;
+	padding:10px 5px 14px 5px;
+	text-align:center;
+	display:block;
+}
+#findTimeKind li:hover{
+	border-bottom:solid 2px #eb7350;
+	padding-bottom:12px;
+}
+#hotKind{
+	float:left;
+	margin:10px;
+}
+#hotKind li{
+	float:left;
+	width:50%;
+	margin:3px 0;
+	line-height:18px;
+}
+#hotKind li img{
+	float:left;
+	width:15px;
+	height:15px;
+	margin-right:3px;
+	line-height:18px;
+}
