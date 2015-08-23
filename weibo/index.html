@@ -4,12 +4,21 @@
 	<meta charset="UTF-8">
 	<meta name="keywords" content="微博，好友关注">
 	<title>微博首页</title>
-	<link rel="stylesheet" href="./css/public.css" type="text/css">
+	<!-- <link rel="stylesheet" href="./css/public.css" type="text/css">
 	<link rel="stylesheet" href="./css/index.css" type="text/css">
 	<link rel="stylesheet" href="./css/article.css" type="text/css">
 	<script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="./js/index.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script> -->
 
+
+    <link rel="icon" type="image/ico" href="./public/favicon.ico"/>
+	<link rel="stylesheet" href="./public/HOME/css/public.css" type="text/css">
+	<link rel="stylesheet" href="./public/HOME/css/index.css" type="text/css">
+	<link rel="stylesheet" href="./public/HOME/css/article.css" type="text/css">
+	<script type="text/javascript" src="./public/HOME/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="./public/HOME/js/index.js"></script>
+	<script type="text/javascript" charset="utf-8" src="./public/Home/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="./public/Home/ueditor/ueditor.all.min.js"> </script>
 </head>
 <body id="index">
    <!-- 公用头部 -->
@@ -17,15 +26,15 @@
 		<img src="./images/WB_logo.png" alt="logo">
 		<input type="text" id="search"  placeholder="大家正在搜：">
 		<ul>
-			<li><a href="" class="pubLink" id="headerIndex"><span>首页</span></a></li>
-			<li><a href="" class="pubLink" id="headerFind"><span>发现</span></a></li>
-			<li><a href="" class="pubLink" id="headerGame"><span>游戏</span></a></li>
-			<li><a href="" class="pubLink" id="headerName"><span>佳佳wk0Y</span></a></li>
+			<li><a href="index.html" class="pubLink" id="headerIndex"><span>首页</span></a></li>
+			<li><a href="finding.html" class="pubLink" id="headerFind"><span>发现</span></a></li>
+			<li><a href="game.html" class="pubLink" id="headerGame"><span>游戏</span></a></li>
+			<li><a href="usercenter.html" class="pubLink" id="headerName"><span>佳佳wk0Y</span></a></li>
 		</ul>
 		
 		<ol>
 			<li><a href="" class="pubLink"  id="headerMail"><img src="e.gif" alt=""></a></li>
-			<li><a href="" class="pubLink" id="headerSet"><img src="e.gif" alt=""></a></li>
+			<li><a href="setting.html" class="pubLink" id="headerSet"><img src="e.gif" alt=""></a></li>
 			<li><a href="" class="pubLink" id="headerNew"><img src="e.gif" alt=""></a></li>
 		</ol>
 	</div>
@@ -34,7 +43,7 @@
                    <li>评论</li>
                    <li>赞</li>
                 </ul> -->
-	<a  name="top"></a>
+	<a name="top" id="top"></a><!-- 锚点 -->
 	<div id="section">
 	<!-- 内容部分 -->
 	    <!-- 左侧侧边栏 -->
@@ -47,18 +56,18 @@
 	    	</ul>
 	    	<span>—————————<a href=""><img src="./js/svg/cog.svg" title="管理"></a>——</span>
 	    	<ul id="lAside2">
-	    		<a href=""><li>好友圈<b>1</b></li></a>
-	    		<a href=""><li>群微博<b>1</b></li></a>
-	    		<a href=""><li>特别关注<b>1</b></li></a>
+	    		<a href=""><li>好友圈</li></a>
+	    		<a href=""><li>群微博</li></a>
+	    		<a href=""><li>特别关注</li></a>
 	    	</ul>
 	    	<ul id="lAside3">	
-	    		<a href=""><li>企业<b>1</b></li></a>
-	    		<a href=""><li>狗狗<b>1</b></li></a>
-	    		<a href=""><li>吐槽<b>1</b></li></a>
-	    		<a href=""><li>名人<b>1</b></li></a>
-	    		<a href=""><li>科技<b>1</b></li></a>
-	    		<a href=""><li>绘画<b>1</b></li></a>
-	    		<a href=""><li>投资<b>1</b></li></a>
+	    		<a href=""><li>企业</li></a>
+	    		<a href=""><li>狗狗</li></a>
+	    		<a href=""><li>吐槽</li></a>
+	    		<a href=""><li>名人</li></a>
+	    		<a href=""><li>科技</li></a>
+	    		<a href=""><li>绘画</li></a>
+	    		<a href=""><li>投资</li></a>
 	    	</ul>
 	    </div>
 	    <!-- 左侧侧边栏滑动效果 -->
@@ -72,7 +81,7 @@
 	    	    <span id="font4">？</span>
 	    	    <a href="javascript:void(0)" class="speLink"><span id="font5">最新新闻</span></a>
 
-	    	    <textarea id="publish" cols="108" rows="4" value=""></textarea> 
+	    	    <textarea id="publish" name="allCon" value="" ></textarea> 
 <!-- 顶部发布新微博js特效 -->
 
 	    	    <div id="pubContent">
@@ -80,8 +89,8 @@
 	    	    		<a  class="pubLink"><li><img src="./js/svg/smileface.svg" alt="">表情</li></a>
 	    	    		<a  class="pubLink"><li><img src="./js/svg/image.svg" alt="">图片</li></a>
 	    	    		<a  class="pubLink"><li><img src="./js/svg/moviecamera.svg" alt="">视频</li></a>
-	    	    		<a  class="pubLink"><li><b>＃</b>话题</li></a>
-	    	    		<a class="pubLink"><li><img src="./js/svg/basic_sheet_txt.svg" alt="" style="height:20px">长微博</li></a>
+	    	    		<a  class="pubLink"><li id="musicicon"><img src="./public/Home/js/svg/MUSIC0.svg" alt="">音乐</li></a>
+	    	    		<a class="pubLink"><li id="longwb"><img src="./public/Home/js/svg/basic_sheet_txt.svg" alt="" style="height:20px">长微博</li></a>
 	    	    		<li id="elliChoice" title="查看更多"><b></b><b></b><b></b></li>
 	    	    	</ul>
 
@@ -91,11 +100,50 @@
 	    	    	<div id="moreTopic">
 	    	    		<p><img src="./js/svg/star.svg" alt="">点评</p>
 	    	    		<p><img src="./js/svg/clock.svg" alt="">定时发</p>
-	    	    		<p><img src="./js/svg/MUSIC0.svg" alt="">音乐</p>
+	    	    		<p>&nbsp;<b> ＃&nbsp;</b>话题</p>
 	    	    		<p><img src="./js/svg/ecommerce_graph2.svg" alt="">投票</p>
 	    	    		<!-- <p><img src="./js/svg/.svg" alt="">微公益</p>
 	    	    		<p><img src="./js/svg/.svg" alt="">发文件</p> -->
 	    	    	</div>
+	    	    	<!-- 插入表情特效 -->
+	    	    	<div id="emotion">
+							<h3>×</h3>
+							<p><span>默认表情</span></p>
+							<ul> 
+								<li><img src="./public/Home/images/em/0.gif" alt="[em0]"></li>
+								<li><img src="./public/Home/images/em/1.gif" alt="[em1]"></li>
+								<li><img src="./public/Home/images/em/2.gif" alt="[em2]"></li>
+								<li><img src="./public/Home/images/em/3.gif" alt="[em3]"></li>
+								<li><img src="./public/Home/images/em/4.gif" alt="[em4]"></li>
+								<li><img src="./public/Home/images/em/5.gif" alt="[em5]"></li>
+								<li><img src="./public/Home/images/em/6.gif" alt="[em6]"></li>
+								<li><img src="./public/Home/images/em/7.gif" alt="[em7]"></li>
+								<li><img src="./public/Home/images/em/8.gif" alt="[em8]"></li>
+								<li><img src="./public/Home/images/em/9.gif" alt="[em9]"></li>
+								<li><img src="./public/Home/images/em/10.gif" alt="[em10]"></li>
+								<li><img src="./public/Home/images/em/11.gif" alt="[em11]"></li>
+								<li><img src="./public/Home/images/em/12.gif" alt="[em12]"></li>
+								<li><img src="./public/Home/images/em/13.gif" alt="[em13]"></li>
+								<li><img src="./public/Home/images/em/14.gif" alt="[em14]"></li>
+								<li><img src="./public/Home/images/em/15.gif" alt="[em15]"></li>
+								<li><img src="./public/Home/images/em/16.gif" alt="[em16]"></li>
+								<li><img src="./public/Home/images/em/17.gif" alt="[em17]"></li>
+								<li><img src="./public/Home/images/em/18.gif" alt="[em18]"></li>
+								<li><img src="./public/Home/images/em/19.gif" alt="[em19]"></li>
+								<li><img src="./public/Home/images/em/20.gif" alt="[em20]"></li>
+								<li><img src="./public/Home/images/em/21.gif" alt="[em21]"></li>
+								<li><img src="./public/Home/images/em/22.gif" alt="[em22]"></li>
+								<li><img src="./public/Home/images/em/23.gif" alt="[em23]"></li>
+								<li><img src="./public/Home/images/em/24.gif" alt="[em24]"></li>
+								<li><img src="./public/Home/images/em/25.gif" alt="[em25]"></li>
+								<li><img src="./public/Home/images/em/26.gif" alt="[em26]"></li>
+								<li><img src="./public/Home/images/em/27.gif" alt="[em27]"></li>
+								<li><img src="./public/Home/images/em/28.gif" alt="[em28]"></li>
+								<li><img src="./public/Home/images/em/29.gif" alt="[em29]"></li>
+
+								
+							</ul>
+	    	             </div>
                     <!-- 具体操作 -->
 	    	    	<div id="speOperate">
 	    	    		<p>上传图片</p>  
@@ -107,6 +155,51 @@
 
 	    	    
 	    	</div>
+	    	 <script type="text/javascript">
+                            $("#emotionicon").click(function(){
+                            	$(".pubconChose").not("#emotion").css("display",'none').hide();
+                            	$("#emotion").css("display",'block').show();
+                            });
+                            $("#emotion h3").click(function(){
+                            	$("#emotion").css("display",'none').hide();
+                            });
+                            //加入输入框特效
+                            $("#emotion img").click(function(){
+                            	var imgSrc=$(this).attr("alt");
+                            	var oldHtml=$("#publish").val();
+                            	var newHtml=oldHtml+imgSrc;
+                            	$("#publish").val(newHtml);
+                            });
+
+                           //图片内容
+                            $("#imageicon").click(function(){
+                            	$(".pubconChose").not("#imagecon").css("display",'none').hide();
+                            	$("#imagecon").css("display",'block').show();
+                            });
+                            $("#imagecon h3").click(function(){
+                            	$("#imagecon").css("display",'none').hide();
+                            });
+                          
+
+                            //视频内容
+                            $("#videoicon").click(function(){
+                            	$(".pubconChose").not("#videocon").css("display",'none').hide();
+                            	$("#videocon").css("display",'block').show();
+                            });
+                            $("#videocon h3").click(function(){
+                            	$("#videocon").css("display",'none').hide();
+                            });
+                            //音乐
+                            $("#musicicon").click(function(){
+                            	$(".pubconChose").not("#musiccon").css("display",'none').hide();
+                            	$("#musiccon").css("display",'block').show();
+                            });
+                            $("#musiccon h3").click(function(){
+                            	$("#musiccon").css("display",'none').hide();
+                            });
+
+	    	             </script>
+	    	       
 	    	<!-- 搜索内容模块 -->
 	    	<div class="contentBlock">
 	    		<ul id="sContent">
@@ -151,7 +244,70 @@
 	    		    <a href="" class="speLink">有7条新微博，点击查看</a>
 	    		</div>
 	    	</div>
-	    		    	<!-- 显示高级搜索部分   js代码 -->	    	
+	    		    	<!-- 显示高级搜索部分   js代码 -->	    
+
+	    		    	<!-- **************************表情符号特效*************************** -->
+<script type="text/javascript">
+   var sCon=$(".conContent").size();
+	   for(var i=0;i<sCon;i++){
+	//获得图像编号
+
+		var str=$(".conContent").eq(i).text();
+		var str1=str.match(/(\[em\d{1,2}\])/g);
+	    if(str1==null){
+	    	continue;
+	    }
+	    str2=str1.join('');
+	    var arr=str2.split("[em");
+		str=arr.join('');
+		arr=str.split(']')
+		if(arr[0]==''){
+			arr.shift();
+		}
+		var len=arr.length;
+		if(arr[len-1]==''){
+			arr.pop();
+		}
+	//替换图像
+	    var len=arr.length;
+		var str=$(".conContent").eq(i).html();
+		 var str1=str.replace(/\[em\d{1,2}\]/g,"<img src=''>");
+	    $(".conContent").eq(i).html(str1);
+	    for(var j=0;j<len;j++){
+	        $(".conContent").eq(i).children("img").eq(j).attr("src","__PUBLIC__/Home/images/em/"+arr[j]+".gif");
+	     }
+	   }
+    var sOtherCon=$(".otherConContent").size();
+	   for(var i=0;i<sOtherCon;i++){
+	//获得图像编号
+
+		var str=$(".otherConContent").eq(i).text();
+		var str1=str.match(/(\[em\d{1,2}\])/g);
+	    if(str1==null){
+	    	continue;
+	    }
+	    str2=str1.join('');
+	    var arr=str2.split("[em");
+		str=arr.join('');
+		arr=str.split(']')
+		if(arr[0]==''){
+			arr.shift();
+		}
+		var len=arr.length;
+		if(arr[len-1]==''){
+			arr.pop();
+		}
+	//替换图像
+	    var len=arr.length;
+		var str=$(".otherConContent").eq(i).html();
+		 var str1=str.replace(/\[em\d{1,2}\]/g,"<img src=''>");
+	    $(".otherConContent").eq(i).html(str1);
+	    for(var j=0;j<len;j++){
+	        $(".otherConContent").eq(i).children("img").eq(j).attr("src","__PUBLIC__/Home/images/em/"+arr[j]+".gif");
+	     }
+	   }
+  
+</script>	
 	    	<!-- 具体内容模块 -->
 	    	<div class="contentBlock">
 	    		<div class="upContent">
@@ -420,6 +576,31 @@
 	    </div>
 
 <!-- ++++++++++++++++++++***********js  特效模块  ****************+++++++++++++++++++++++++++ -->
+
+<!-- ******************点击图片  查看图片 **********************************-->
+	    				
+		<div class="zoomImg">
+				<p class="clickImgOp"><a class="putup">收起</a><a class="pubLink" id="bigphoto" target="_blank">查看大图</a><!-- <a>向左旋转</a><a>向右旋转</a> -->
+			    </p> 
+             	<img src="" alt="" class="clickImg">
+		</div> 
+		<!-- **********展示多张图片 的 特效********** -->
+		<div class="showClickImg">
+	        <span class="showPre"><</span>
+	    	
+	    	<span class="showNex">></span>
+	    </div>
+<script type="text/javascript">
+	$("#bigphoto").click(function(){
+		var str=$(this).parent().parent().children("img").attr("alt");
+		var imgid=parseInt(str);
+		var uid=$("#allAJAXid").text();//本人
+		var conuid=$(this).parent().parent().next(".ajaxconuid").text();//内容用户
+		var link="__ROOT__/Home/Photo/bigphoto/id/"+uid+"/imgid/"+imgid+"/conuid/"+conuid;
+        window.open(link);
+       //console.log(link);
+	});
+</script>
 <!-- 分页部分特效  暂时留在这里  未写完-->
 <script type="text/javascript">
 	$("#pageNum").mouseover(function(){

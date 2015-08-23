@@ -1,0 +1,369 @@
+#article{
+	width:100%;
+	float:left;
+	background:url(../images/body_bg_page.jpg) repeat-x 0 0,
+	            #D4D5E0;
+	           
+}
+/*#section{	
+	width:900px;
+	float:left;
+	background:url(../images/body_bg_page.jpg) repeat-x 0 0,
+	            #D4D5E0;          
+}*/
+
+#artContent{
+	width:600px;
+	float:left;
+	margin-top:65px;
+	margin-left:16%;
+	border-radius:3px;
+}
+ 
+/*文章内容*/
+#artArticle{
+	width:570px;
+	float:left;
+	background:white;
+	padding:20px 15px;
+	margin-bottom:15px;
+	border-radius:3px;
+}
+#artArticle h2{
+	font-size:22px;
+	text-align:center;
+}
+#artArticle h3{
+	color:#999;
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+#artArticle p{
+	font-size:14px;
+	color:#777;
+	line-height:25px;
+	margin-bottom:20px;
+}
+
+/*我的评论*/
+#artComment{
+	float:left;
+	width:570px;
+	background:white;
+	padding:20px 15px;
+	margin-bottom:15px;
+	margin-top:5px;
+	border-radius:3px;	
+}
+#artComment p{
+	float:left;
+	width:100%;
+	text-align:right;
+	color:#888;
+}
+#artComment p span{
+	font-weight:bold;
+	font-style:italic;
+	font-size:16px;
+}
+#artComment img{
+	float:left;
+	width:50px;
+	height:50px;
+	margin-bottom:50px;
+	border-radius:25px;
+}
+
+#artComment textarea{
+	width:485px;
+	float:left;
+	margin-left:15px;
+	padding:3px 5px;
+}
+#artComment b{
+	float:left;
+	margin-left:15px;
+	font-weight:bold;
+	font-size:30px;
+	color:#eb7350;
+}
+#artComment b:hover{
+	color:#eb9399;
+}
+#artComment button{
+	float:right;
+	padding:3px 18px;
+	font-size:14px;
+	margin:5px 7px;
+	background:#eb7350;
+	color:white;
+	border:0;
+	font-family:"宋体";
+	border-radius:3px;
+}
+#artComment button:hover{
+	background:#ed7389;
+}
+/*分享*/
+#artShareF{
+	width:570px;
+	float:left;
+	background:white;
+	padding:5px 15px;
+	margin-bottom:10px;
+	margin-top:1px;
+	border-radius:3px;		
+}
+#artShareF p{
+	float:left;
+	width:100%;
+	margin:3px 0;
+}
+#artShareF p span{
+	width:40%;
+	float:left;
+	text-align:center;
+}
+#artShareF p em{
+	width:40%;
+	float:left;
+	text-align:center;
+}
+/*所有评论和分享信息*/
+.artComments{
+	width:570px;
+	float:left;
+	background:white;
+	padding:20px 15px;
+	margin-bottom:10px;
+	border-radius:3px;	
+}
+
+
+/*右侧作者信息*/
+#artAuthor{
+	float:left;
+	margin-left:20px;
+	margin-top:65px;
+	width:270px;
+	background:white;
+	padding:10px 15px;
+	border-radius:3px;
+	position:relative;
+
+}
+#authPicture{
+    width:65px;
+    float:left;
+}
+#authPhoto{
+	width:50px;
+	height:50px;
+	border-radius:25px;
+	float:left;
+	margin:5px 5px 10px 0px;
+}
+#authInfo{
+	float:left;
+	width:165px;
+}
+#authName{
+	float:left;
+	width:165px;
+	margin:5px;
+}
+#authName b{
+	font-size:14px;
+	float:left;
+	
+}
+#authIntro{
+	float:left;
+	width:190px;
+	margin:5px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;	
+}
+#jsGroup{
+	float:left;
+	padding:0;
+	position:relative;
+}
+#jsGroup button{
+	background:white;
+	border:solid 1px #BBB;
+	padding:3px 6px;
+	border-radius:3px;
+	color:#888;
+	
+}
+#jsGroup button span{
+	font-weight:bold;
+}
+
+
+#jsGroup button:hover span{
+	color:#eb7350;
+}
+   /*关注按钮下拉列表*/
+#simset{
+	position:absolute;
+	display:none;
+	left:0px;
+	top:25px;
+	width:86px;
+	float:left;
+	height:52px;
+	z-index:2;
+	border:solid 1px #BBB;
+	border-radius:3px;
+	background:white;
+}
+#simset>p{
+	text-align:center;
+	height:25px;
+	line-height:25px;
+}
+#simset>p:hover{
+	background:#ECECEC;
+	cursor:pointer;
+} 
+
+/*******************************设置分组模块 覆盖整个页面  浏览器窗口定位  用JavaScript*****************/
+#groupAtten{
+	position:fixed;
+	background:rgba(0,0,0,0.4);
+	display:none;
+	left:0px;
+	top:0px;
+	z-index:5;
+	bottom:0px;
+	right:0px;
+}
+#groupBlock{
+    width:480px;
+    height:400px;
+    position:relative;
+    background:white;
+    margin:100px auto auto;
+    border-radius:3px;
+    border-top:solid 2px #eb7350;
+}
+#groupBlock h2{
+	padding:5px 20px;
+	font-size:16px;
+	font-weight:bold;
+	border-bottom:solid 1px #999;
+}
+#groupBlock h2:hover{
+	cursor:move;
+}
+#groupBlock h2 span{
+	float:right;
+	font-size:20px;
+}
+#groupBlock h2 span:hover{
+	color:#eb7350;
+	cursor:pointer;
+}
+#groupBlock h3{
+	padding:5px 20px;
+	font-size:12px;
+	margin-top:15px;
+	font-weight:bold;
+}
+#groupAll{
+	background:#EEE;
+	padding:15px 0 5px 15px;
+	
+	float:left;
+	margin:5px 20px;
+	border-radius:3px;
+}
+#groupAll ul{
+	float:left;
+	height:180px;
+	width:420px;
+	overflow-y:scroll;
+}
+#groupAll ul li{ 
+	width:180px;
+	height:25px;
+	float:left;
+	padding:3px ;
+	line-height:25px;
+	display:block;
+}
+#groupAll ul li input{
+	float:left;
+    margin-top:6px;
+}
+#groupAll ul li p{
+	float:left;
+	height:25px;
+	line-height:25px;
+	margin-left:4px;
+}
+#addGroupBtn{
+	float:left;
+	padding:3px 10px;
+	margin:5px 0px;
+	border:solid 1px #999;
+	border-radius:3px;
+	background:white;
+}
+#addGroupBtn:hover{
+	cursor:pointer;
+}
+#addGroupBtn span{
+	font-weight:bold;
+	font-size:16px;
+	color:#eb7350;
+}
+#groupBot{
+	float:left;
+	padding:15px 140px;
+	text-align:center;
+	width:200px;
+	margin-top:20px;
+	background:#EEE;
+	border-radius:0 0 3px 3px;
+}
+#groupBot p{
+	float:left;
+	display:block;
+	padding:10px 25px;
+	font-size:14px;
+	margin:0 auto;
+	border-radius:4px;
+	border:solid 1px #E5E5E5;
+}
+#groupBot p:hover{
+	cursor:pointer;
+	
+}
+#groupbtn1{
+	background:#eb7350;
+	color:white;
+}
+#groupbtn2{
+	background:white;
+}
+#groupbtn1:hover{
+	background:#eb7560;
+}
+/*返回顶部按钮*/
+#returnBtn{
+	position:fixed;
+	right:12%;
+	bottom:50px;
+	width:10px;
+	height:10px;
+	padding:10px;
+	background:#E0E;
+}
+#returnBtn:hover{
+	background:#E2E;
+}

@@ -1,0 +1,84 @@
+#regChoice{
+	float:left;
+	margin:20px 10px auto 60px;
+	font-size:14px;
+}
+#regChoice li{
+	float:right;
+	clear:right;
+	display:block;
+	font-size:14px;
+	color:#555;
+	height:60px;
+	padding-top:10px;
+}
+#regChoice li:before{
+	content:"*";
+	color:red;
+	float:left;
+	font-size:22px;
+	height:20px;
+	line-height:20px;
+	margin:3px 5px 0;
+}
+#regMethod{
+	float:left;
+	width:20px;
+	height:20px;
+	margin-top:10px;
+	margin-left:10px;
+	background:url(../images/login/reg_method_s.png) no-repeat left 0px top 0px;
+}    
+/*#regContent{
+	margin:20px 10px auto 10px;
+	font-size:12px;
+}   
+#regContent input{
+	height:22px;
+	width:210px;
+	padding:3px 5px;
+	border:solid 1px #898989;
+	border-radius:2px;
+	margin:5px 0 15px;
+}  
+#regContent li{
+	height:70px;
+}  */
+#veriCode input{
+	width:80px;
+	margin-left:0px;
+}
+#regConPhone{
+	position:relative;
+}
+#regConPhone a{
+	color:#0A8CD2;
+}
+#regConPhone input{
+	width:210px;
+	padding:3px 5px 3px 5px;
+}
+#regConPhone input:focus{
+	border:solid 1px #eb7350;
+	
+}
+/*国家区号设置*/
+#countrySet{
+	position:absolute;
+	left:0;
+	top:5px;
+	width:43px;
+	height:28px;
+	background:#FFF;
+	border:solid 1px #898989;
+}
+#countrySet:hover{
+	background:#DDD;
+}
+
+
+
+
+#regConPwd input:focus{
+	border:solid 1px #eb7350;
+}

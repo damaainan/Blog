@@ -1,0 +1,317 @@
+#photo{
+    padding-top:52px;
+    background:white;
+    float:left;
+}
+#photobig{
+	padding-top:52px;
+	background:white;
+    float:left;
+    overflow-x:scroll;
+}
+
+#photoHeader{
+    width:100%;
+    padding-left:12%;
+    float:left;
+    height:40px;
+    border-bottom:dotted 1px rgba(120,120,120,0.5);
+    background:#EAEAEA;
+ }
+#phHeadCon{
+    width:980px;
+    float:left;
+}
+
+#photoLogo{
+    float:left;
+    height:30px;
+    width:93px;
+    margin-top:5px;
+    margin-bottom:5px;
+    background:url(../images/photo/logo_o.png) no-repeat left 0 top 0;
+}
+#phHeadCon ul{
+    float:left;
+    margin-left:20px;
+}
+#phHeadCon ul li{
+    display:inline;
+    float:left;
+    width:76px;
+    height:24px;
+    line-height:24px;
+    margin-top:10px;
+    text-align:center;
+}
+#phHeadCon ul li:hover{
+    color:#5DB1F7;
+    cursor:pointer;
+}    
+#phHeadCon input{
+    background:url(../images/photo/search_bg.png) no-repeat left 0 top 0;
+    float:left;
+    height:23px;
+    margin-top:12px;
+    padding-left:7px;
+    width:185px;
+    color:#555;
+    border:rgba(0,0,0,0);
+    margin-left:260px;   
+}
+#photoSearch{
+
+}
+#photoSet{
+    background:url(../images/photo/icon.png) no-repeat left 0 top 0;
+    float:left;
+    height:23px;
+    width:23px;
+    margin-top:15px;  
+    margin-left:6px;  
+}
+#photoSet:hover{
+    background:url(../images/photo/icon.png) no-repeat left -35px top 0;
+}
+#photoHelp{
+    background:url(../images/photo/icon.png) no-repeat left 0 top -1379px;
+    float:left;
+    height:23px;
+    width:23px;
+    margin-top:15px;   
+    margin-left:6px;
+}
+#photoHelp:hover{
+    background:url(../images/photo/icon.png) no-repeat left -35px top -1379px;
+}
+#photoCall{
+    float:left;
+    height:23px;
+    line-height:23px;
+    margin-top:11px;   
+    margin-left:10px;  
+}
+#photoCall:hover{
+    color:#5DB1F7;
+}
+    /*照片展示部分*/
+#photoBody{
+    float:left;
+    width:980px;
+    margin-left:12%; 
+    padding-top:20px;
+    padding-bottom:20px;
+}
+#phBdLeft{
+    width:690px;
+    float:left;
+    margin-right:30px;
+}
+#phBdLefthead{
+    color:black;
+    font-weight:bold;
+}
+#phBdLefthead span{
+    font-weight:normal;
+    color:#565656;
+}
+#phBdLefthead span:hover{
+    text-decoration:underline;
+}
+#phBdLefthead b{
+    color:#989898;
+}
+/*大图展示*/
+#showBigMod{
+    float:left;
+    width:690px;
+    margin:25px 0 15px;
+    text-align:center;
+}
+#showBigMod img{
+    max-width:690px;
+
+}
+/*操作*/
+#photoOperate{
+    float:left;
+    margin:0 100px 20px 0;
+}
+#photoOperate li{
+    display:inline;
+    height:15px;
+    float:left;
+    line-height:15px;
+    margin-right:8px;
+    color:#565656;
+}
+#photoOperate li span{
+    float:left;
+    width:16px;
+    height:15px;
+}
+#photoBeau span{
+    background:url(../images/photo/icon.png) no-repeat left -35px top -299px;
+}
+
+#photoDelete span{
+    background:url(../images/photo/icon.png) no-repeat left 0px top -718px;
+}
+#photoMoreOp span{
+    color:#AAA;
+}
+#photoOperate li:hover{
+    color:#5E9ADA;
+    cursor:pointer;
+}
+#photoBeau:hover span{
+    background:url(../images/photo/icon.png) no-repeat left -70px top -299px;
+}
+#photoDelete:hover span{
+    background:url(../images/photo/icon.png) no-repeat left -35px top -718px;
+}
+/*专辑简介及链接*/
+#photoAlbumBrief{
+    float:left;
+    width:100%;
+    margin:10px 0;
+    color:#888;
+    
+    line-height:18px;
+}
+#photoAlbumBrief a{
+    color:#5E9ADA;
+}
+#photoSourceTime{
+    float:left;
+    width:100%;
+    margin:5px 0;
+    color:#888;
+}
+#photoSourceTime a{
+    color:#5E9ADA;
+}
+#photoComment{
+    float:left;
+    width:686px;
+    height:72px;
+    border:solid 1px #DCDCDC;
+    border-radius:1px;
+    padding:3px 2px;
+}
+#photoFace{
+    height:20px;
+    width:100%;
+    float:left;
+}
+/*右侧部分*/
+#phBdRight{
+    width:260px;
+    float:left;  
+}
+#photoAlbumImg{
+    float:left;
+    width:80px;
+    height:80px;
+    margin-right:10px;
+}
+#photoAlbumUName{
+    float:left;
+    height:18px;
+    width:170px;
+}
+#photoAlbumUOther{
+    float:left;
+    height:18px;
+    width:170px;
+
+}
+#photoAlbumLi{
+    float:left;
+    margin:6px 10px 0 10px;
+}
+#photoAlbumLi li{
+    float:left;
+    text-align:center;
+    width:50px;
+    height:38px;
+    color:#787878;
+}
+#photoAlbumLi li span{
+    color:#5eda9a;
+    display:block;
+    font-weight:bold;
+    font-size:14px;
+}
+/*专辑图片九宫格展示*/
+#photoAlbumShow{
+    width:260px;
+    float:left;
+    margin-top:15px;
+    border-top:solid 1px #EDEDED;
+    padding-top:20px;
+}
+#photoAlbumShow h2{
+    font-weight:bold;
+    float:left;
+    width:255px;
+    margin:2px;
+}
+#photoAlbumShow h2 span{
+    color:#5eda9a;
+    float:right;
+    font-weight:normal;
+}
+#photoWall{
+    float:left;
+    width:258px;
+    padding:2px 1px;
+    
+}
+#photoWall li{
+    width:80px;
+    height:80px;
+    float:left;
+    
+    background:#DCDCDC;
+    border:solid 3px white;
+}
+#photoWall li img{
+    
+    width:80px;
+    height:80px;
+    float:left;
+   
+}
+#photoWall li:hover{
+   padding:2px;
+   border:solid 1px #5eda0a;
+}
+#changePhoto{
+    float:left;
+    height:30px;
+    width:260px;
+    line-height:30px;
+}
+#prevPhotoAlbum{
+    float:left;
+    height:20px;
+    width:20px;
+    margin:5px 10px 10px 100px;
+    background:url(../images/photo/icon.png) no-repeat left 0px top -480px;
+}
+#nextPhotoAlbum{
+     float:left;
+    height:20px;
+    width:20px;
+    margin:5px 100px 10px 10px;
+    background:url(../images/photo/icon.png) no-repeat left 0px top -510px;   
+}
+#prevPhotoAlbum:hover{
+    cursor:pointer;
+    background:url(../images/photo/icon.png) no-repeat left -35px top -480px;
+}
+#nextPhotoAlbum:hover{
+    cursor:pointer;
+    background:url(../images/photo/icon.png) no-repeat left -35px top -510px; 
+}
